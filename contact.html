@@ -53,6 +53,15 @@ a{color:#4B6147;}
 /* ── Contact Info Card ── */
 .contact-info-section{max-width:640px;margin:0 auto;padding:16px 24px 64px;}
 .contact-card{background:#F2F2F2;border-radius:8px;border:1px solid #c8c3b8;padding:32px 36px;text-align:center;}
+.contact-answer{max-width:900px;margin:0 auto;padding:0 24px 16px;}
+.contact-answer-inner{padding:22px 26px;background:#DDD8CD;border-left:3px solid #4B6147;color:#243221;font-size:17px;line-height:1.7;}
+.contact-answer-inner strong{font-family:'Lora',Georgia,serif;font-weight:400;}
+.contact-faq-section{max-width:900px;margin:0 auto;padding:0 24px 64px;}
+.contact-faq-section h2{font-family:'Lora',Georgia,serif;font-size:26px;font-weight:400;color:#243221;margin:0 0 18px;}
+.contact-faq-list{display:grid;gap:12px;}
+.contact-faq-list details{background:#F2F2F2;border:1px solid #c8c3b8;border-radius:8px;padding:18px 20px;}
+.contact-faq-list summary{cursor:pointer;color:#243221;font-weight:700;line-height:1.35;}
+.contact-faq-list p{margin:12px 0 0;color:#444;font-size:16px;line-height:1.65;}
 .contact-card h2{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:400;color:#243221;margin:0 0 20px;}
 .contact-items{display:flex;flex-wrap:wrap;justify-content:center;gap:32px;margin-bottom:20px;}
 .contact-item{text-align:center;}
@@ -67,6 +76,10 @@ a{color:#4B6147;}
 
 /* ── Mobile ── */
 @media(max-width:768px){
+  .hero{overflow:hidden;}
+  .hero h1,.hero p{display:block;width:100%!important;max-width:100%!important;padding-left:8px;padding-right:8px;box-sizing:border-box;overflow-wrap:anywhere;}
+  .contact-answer{width:100%!important;max-width:100%!important;overflow:hidden;box-sizing:border-box;}
+  .contact-answer-inner{width:100%;max-width:100%;box-sizing:border-box;overflow-wrap:anywhere;}
   .site-nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#243221;padding:16px 24px 20px;gap:16px;border-top:1px solid #4B6147;}
   .site-nav-links.open{display:flex;}
   .nav-toggle{display:block;}
@@ -78,7 +91,7 @@ a{color:#4B6147;}
 }
 </style>
 <link rel="stylesheet" href="assets/site-system.css" data-site-system>
-<link rel="canonical" href="https://credyset.github.io/centripetal-advisors-site-v2/contact.html"><script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","name":"Contact | Centripetal Advisors","description":"Schedule a conversation with Centripetal Advisors to discuss how we can support your financial strategy.","url":"https://credyset.github.io/centripetal-advisors-site-v2/contact.html","isPartOf":{"@type":"WebSite","name":"Centripetal Advisors","url":"https://credyset.github.io/centripetal-advisors-site-v2/"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Centripetal Advisors","item":"https://credyset.github.io/centripetal-advisors-site-v2/"},{"@type":"ListItem","position":2,"name":"Contact | Centripetal Advisors","item":"https://credyset.github.io/centripetal-advisors-site-v2/contact.html"}]}]</script></head>
+<link rel="canonical" href="https://credyset.github.io/centripetal-advisors-site-v2/contact.html"><script type="application/ld+json">[{"@context":"https://schema.org","@type":"ContactPage","name":"Contact | Centripetal Advisors","description":"Schedule a conversation with Centripetal Advisors to discuss how we can support your financial strategy.","url":"https://credyset.github.io/centripetal-advisors-site-v2/contact.html","mainEntity":{"@type":"Organization","name":"Centripetal Advisors","url":"https://credyset.github.io/centripetal-advisors-site-v2/","email":"charles@centripetaladvisors.com","areaServed":"United States"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should I include when I reach out?","acceptedAnswer":{"@type":"Answer","text":"Start with the finance question creating the most pressure, such as cash planning, fundraising readiness, board reporting, finance operations, or whether the current finance support is enough."}},{"@type":"Question","name":"What happens after I send the note?","acceptedAnswer":{"@type":"Answer","text":"The first conversation is a practical discussion of the situation and the next useful step. We always start out with free advice, and if there is a relationship and we want to work together, we will probably find a way."}},{"@type":"Question","name":"Do you work with companies that already have finance support?","acceptedAnswer":{"@type":"Answer","text":"Yes. Many founders already have a bookkeeper, controller, internal operator, or finance process in place. The question is usually whether the work mix now needs embedded financial strategy and clearer ownership."}},{"@type":"Question","name":"Do I need a complete finance plan before reaching out?","acceptedAnswer":{"@type":"Answer","text":"No. Bring the finance question creating the most pressure and whatever current materials help explain it. The first conversation is about clarifying the situation and identifying the next useful step."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Centripetal Advisors","item":"https://credyset.github.io/centripetal-advisors-site-v2/"},{"@type":"ListItem","position":2,"name":"Contact | Centripetal Advisors","item":"https://credyset.github.io/centripetal-advisors-site-v2/contact.html"}]}]</script></head>
 <body>
 
 <nav class="site-nav" aria-label="Primary navigation"><div class="site-nav-inner">
@@ -96,6 +109,10 @@ a{color:#4B6147;}
 <section class="hero">
 <h1>Let's Talk</h1>
 <p>Schedule a 30-minute conversation to discuss how Centripetal can support your financial strategy.</p>
+</section>
+
+<section class="contact-answer" aria-label="How to start a conversation">
+<div class="contact-answer-inner"><strong>Direct answer:</strong> Start with the finance question that is creating the most pressure—cash planning, fundraising readiness, board reporting, or finance operations. The first conversation is a practical discussion of the situation and the next useful step.</div>
 </section>
 
 <div class="calendly-section">
@@ -120,6 +137,16 @@ a{color:#4B6147;}
 <p class="contact-note">Serving SaaS companies nationwide</p>
 </div>
 </div>
+
+<section class="contact-faq-section" aria-label="Contact questions">
+<h2>Before You Reach Out</h2>
+<div class="contact-faq-list">
+<details><summary>What should I include when I reach out?</summary><p>Start with the finance question creating the most pressure, such as cash planning, fundraising readiness, board reporting, finance operations, or whether the current finance support is enough.</p></details>
+<details><summary>What happens after I send the note?</summary><p>The first conversation is a practical discussion of the situation and the next useful step. We always start out with free advice, and if there is a relationship and we want to work together, we will probably find a way.</p></details>
+<details><summary>Do you work with companies that already have finance support?</summary><p>Yes. Many founders already have a bookkeeper, controller, internal operator, or finance process in place. The question is usually whether the work mix now needs embedded financial strategy and clearer ownership.</p></details>
+<details><summary>Do I need a complete finance plan before reaching out?</summary><p>No. Bring the finance question creating the most pressure and whatever current materials help explain it. The first conversation is about clarifying the situation and identifying the next useful step.</p></details>
+</div>
+</section>
 
 <footer class="footer">
 <p>&copy; 2026 Centripetal Advisors. Strategic finance for B2B SaaS founders.</p>
