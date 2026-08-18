@@ -1,13 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
-      text { font-family: 'Inter', 'Calibri', sans-serif; }
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;800&amp;display=swap');
+      text { font-family: 'Roboto', sans-serif; }
     </style>
   </defs>
-
-  <!-- Logo -->
-  <image href="/Users/christianwutz/Desktop/RedySet/Clients/Centripetal Advisors/Centripetal_Pentagon/linkedin_assets/LinkedIn Assets/Centripetal_LinkedIn_Profile.png" x="30" y="20" width="70" height="70"/>
 
   <!-- Background -->
   <rect width="1080" height="1350" fill="#4B6147"/>
@@ -15,72 +12,72 @@
   <!-- Header -->
   <text x="540" y="90" text-anchor="middle" fill="#DDD8CD" font-size="22" font-weight="600" letter-spacing="3">METRIC OF THE WEEK</text>
   <text x="540" y="160" text-anchor="middle" fill="#FFFFFF" font-size="52" font-weight="800">LTV:CAC Ratio</text>
-  <text x="540" y="215" text-anchor="middle" fill="#DDD8CD" font-size="24" font-weight="400">Is your growth sustainable?</text>
+  <text x="540" y="215" text-anchor="middle" fill="#DDD8CD" font-size="24" font-weight="400">The blended ratio is only the starting point</text>
 
   <!-- Formula Box -->
   <rect x="90" y="255" width="900" height="80" rx="12" fill="#5A7A54"/>
-  <text x="540" y="305" text-anchor="middle" fill="#DDD8CD" font-size="26" font-weight="600">LTV = ARPU × Gross Margin × (1 / Monthly Churn)</text>
+  <text x="540" y="305" text-anchor="middle" fill="#DDD8CD" font-size="26" font-weight="600">Segment view = acquisition cost + retention + margin + implementation effort</text>
 
-  <!-- Benchmark by Stage -->
-  <text x="540" y="400" text-anchor="middle" fill="#DDD8CD" font-size="22" font-weight="700" letter-spacing="2">2026 BENCHMARKS BY STAGE</text>
+  <!-- Segment by Motion -->
+  <text x="540" y="400" text-anchor="middle" fill="#DDD8CD" font-size="22" font-weight="700" letter-spacing="2">BREAK THE RATIO DOWN BY MOTION</text>
 
   <!-- Early Stage -->
   <rect x="90" y="430" width="280" height="200" rx="12" fill="#DDD8CD"/>
-  <text x="230" y="470" text-anchor="middle" fill="#243221" font-size="18" font-weight="600">EARLY STAGE</text>
-  <text x="230" y="500" text-anchor="middle" fill="#5A7A54" font-size="16">&lt;$2M ARR</text>
-  <text x="230" y="560" text-anchor="middle" fill="#243221" font-size="48" font-weight="800">2.5:1</text>
-  <text x="230" y="600" text-anchor="middle" fill="#5A7A54" font-size="16">120-day payback</text>
+  <text x="230" y="470" text-anchor="middle" fill="#243221" font-size="18" font-weight="600">ENTERPRISE</text>
+  <text x="230" y="505" text-anchor="middle" fill="#5A7A54" font-size="16">Longer sales cycle</text>
+  <text x="230" y="555" text-anchor="middle" fill="#243221" font-size="34" font-weight="800">Large ACV</text>
+  <text x="230" y="600" text-anchor="middle" fill="#5A7A54" font-size="16">Implementation burden matters</text>
 
   <!-- Growth Stage -->
   <rect x="400" y="430" width="280" height="200" rx="12" fill="#FFFFFF"/>
   <rect x="400" y="430" width="280" height="6" rx="3" fill="#4B6147"/>
-  <text x="540" y="470" text-anchor="middle" fill="#243221" font-size="18" font-weight="600">GROWTH STAGE</text>
-  <text x="540" y="500" text-anchor="middle" fill="#5A7A54" font-size="16">$2M–$10M ARR</text>
-  <text x="540" y="560" text-anchor="middle" fill="#243221" font-size="48" font-weight="800">3-4:1</text>
-  <text x="540" y="600" text-anchor="middle" fill="#5A7A54" font-size="16">90-day payback</text>
+  <text x="540" y="470" text-anchor="middle" fill="#243221" font-size="18" font-weight="600">MID-MARKET</text>
+  <text x="540" y="505" text-anchor="middle" fill="#5A7A54" font-size="16">Mixed motion</text>
+  <text x="540" y="555" text-anchor="middle" fill="#243221" font-size="34" font-weight="800">Compare cohorts</text>
+  <text x="540" y="600" text-anchor="middle" fill="#5A7A54" font-size="16">Expansion can change the read</text>
 
   <!-- Scale Stage -->
   <rect x="710" y="430" width="280" height="200" rx="12" fill="#DDD8CD"/>
-  <text x="850" y="470" text-anchor="middle" fill="#243221" font-size="18" font-weight="600">SCALE STAGE</text>
-  <text x="850" y="500" text-anchor="middle" fill="#5A7A54" font-size="16">&gt;$10M ARR</text>
-  <text x="850" y="560" text-anchor="middle" fill="#243221" font-size="48" font-weight="800">3.8-5:1</text>
-  <text x="850" y="600" text-anchor="middle" fill="#5A7A54" font-size="16">80-day payback</text>
+  <text x="850" y="470" text-anchor="middle" fill="#243221" font-size="18" font-weight="600">SMB</text>
+  <text x="850" y="505" text-anchor="middle" fill="#5A7A54" font-size="16">Faster close</text>
+  <text x="850" y="555" text-anchor="middle" fill="#243221" font-size="34" font-weight="800">Retention risk</text>
+  <text x="850" y="600" text-anchor="middle" fill="#5A7A54" font-size="16">Support load can change value</text>
 
   <!-- Interpretation Scale -->
-  <text x="540" y="700" text-anchor="middle" fill="#DDD8CD" font-size="22" font-weight="700" letter-spacing="2">WHAT THE NUMBER TELLS YOU</text>
+  <text x="540" y="700" text-anchor="middle" fill="#DDD8CD" font-size="22" font-weight="700" letter-spacing="2">WHAT THE BLENDED NUMBER CAN HIDE</text>
 
   <rect x="90" y="730" width="420" height="85" rx="8" fill="#8B4513" opacity="0.5"/>
-  <text x="300" y="765" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="800">&lt; 1:1</text>
-  <text x="300" y="798" text-anchor="middle" fill="#DDD8CD" font-size="18">Losing money on every customer</text>
+  <text x="300" y="765" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="800">Concentration</text>
+  <text x="300" y="798" text-anchor="middle" fill="#DDD8CD" font-size="18">One customer can distort the read</text>
 
   <rect x="570" y="730" width="420" height="85" rx="8" fill="#8A7A40" opacity="0.4"/>
-  <text x="780" y="765" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="800">1:1 – 3:1</text>
-  <text x="780" y="798" text-anchor="middle" fill="#DDD8CD" font-size="18">Not sustainable — fix before scaling</text>
+  <text x="780" y="765" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="800">Timing</text>
+  <text x="780" y="798" text-anchor="middle" fill="#DDD8CD" font-size="18">Spend now, revenue later</text>
 
   <rect x="90" y="830" width="420" height="85" rx="8" fill="#4B6147" opacity="0.5"/>
-  <text x="300" y="865" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="800">3:1 – 5:1</text>
-  <text x="300" y="898" text-anchor="middle" fill="#DDD8CD" font-size="18">Healthy and sustainable</text>
+  <text x="300" y="865" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="800">Margin</text>
+  <text x="300" y="898" text-anchor="middle" fill="#DDD8CD" font-size="18">Service load changes LTV</text>
 
   <rect x="570" y="830" width="420" height="85" rx="8" fill="#2E5090" opacity="0.4"/>
-  <text x="780" y="865" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="800">&gt; 5:1</text>
-  <text x="780" y="898" text-anchor="middle" fill="#DDD8CD" font-size="18">May be underinvesting in growth</text>
+  <text x="780" y="865" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="800">Channel mix</text>
+  <text x="780" y="898" text-anchor="middle" fill="#DDD8CD" font-size="18">Inbound and outbound behave differently</text>
 
   <!-- Common Mistake -->
   <rect x="90" y="955" width="900" height="100" rx="10" fill="#DDD8CD" opacity="0.15"/>
-  <text x="540" y="995" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">⚠️ Common Mistake</text>
-  <text x="540" y="1030" text-anchor="middle" fill="#DDD8CD" font-size="18">Using gross CAC instead of fully loaded CAC inflates your ratio 30-50%</text>
+  <text x="540" y="995" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">Common mistake</text>
+  <text x="540" y="1030" text-anchor="middle" fill="#DDD8CD" font-size="18">Using incomplete CAC can make a segment look healthier than it is</text>
 
   <!-- Segment Breakdown -->
   <text x="540" y="1110" text-anchor="middle" fill="#DDD8CD" font-size="20" font-weight="700" letter-spacing="2">ALWAYS CALCULATE BY SEGMENT</text>
 
   <rect x="90" y="1135" width="280" height="70" rx="8" fill="#4B6147" opacity="0.5"/>
-  <text x="230" y="1175" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">Enterprise: 6:1+ ✅</text>
+  <text x="230" y="1175" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">Enterprise: inspect implementation</text>
 
   <rect x="400" y="1135" width="280" height="70" rx="8" fill="#5A7A54" opacity="0.6"/>
-  <text x="540" y="1175" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">Mid-Market: 3-4:1 ✅</text>
+  <text x="540" y="1175" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">Mid-market: inspect expansion</text>
 
   <rect x="710" y="1135" width="280" height="70" rx="8" fill="#8B4513" opacity="0.5"/>
-  <text x="850" y="1175" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">SMB: &lt;2:1 ❌</text>
+  <text x="850" y="1175" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">SMB: inspect retention</text>
 
   <!-- Footer -->
   <line x1="90" y1="1250" x2="990" y2="1250" stroke="#DDD8CD" stroke-width="1"/>
