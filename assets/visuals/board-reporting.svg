@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8640 1350" width="8640" height="1350">
+  <!-- 8-slide carousel: 1080x1350 per slide, laid out horizontally -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
+      text { font-family: 'Inter', 'Calibri', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Logo on Slide 1 -->
+  <image href="/Users/christianwutz/Desktop/RedySet/Clients/Centripetal Advisors/Centripetal_Pentagon/linkedin_assets/LinkedIn Assets/Centripetal_LinkedIn_Profile.png" x="475" y="350" width="130" height="130"/>
+
+  <!-- SLIDE 1: Title -->
+  <rect x="0" y="0" width="1080" height="1350" fill="#4B6147"/>
+  <text x="540" y="100" text-anchor="middle" fill="#DDD8CD" font-size="22" font-weight="600" letter-spacing="3">CENTRIPETAL ADVISORS</text>
+  <text x="540" y="500" text-anchor="middle" fill="#FFFFFF" font-size="56" font-weight="800">The 8-Slide</text>
+  <text x="540" y="570" text-anchor="middle" fill="#FFFFFF" font-size="56" font-weight="800">Board Deck</text>
+  <text x="540" y="640" text-anchor="middle" fill="#FFFFFF" font-size="56" font-weight="800">Template</text>
+  <text x="540" y="730" text-anchor="middle" fill="#DDD8CD" font-size="24" font-weight="400">Every slide earns its place.</text>
+  <text x="540" y="770" text-anchor="middle" fill="#DDD8CD" font-size="24" font-weight="400">8 slides. 3 decisions. Zero filler.</text>
+  <text x="540" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="18">Swipe →</text>
+
+  <!-- SLIDE 2: Slide 1 - Decisions -->
+  <rect x="1080" y="0" width="1080" height="1350" fill="#DDD8CD"/>
+  <rect x="1080" y="0" width="1080" height="120" fill="#4B6147"/>
+  <text x="1620" y="50" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="600">SLIDE 1</text>
+  <text x="1620" y="90" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">The Three Decisions</text>
+  <text x="1620" y="220" text-anchor="middle" fill="#243221" font-size="24" font-weight="600">Start with what you NEED from the board.</text>
+  <rect x="1180" y="280" width="800" height="80" rx="8" fill="#FFFFFF" stroke="#4B6147" stroke-width="2"/>
+  <text x="1220" y="330" fill="#4B6147" font-size="22" font-weight="700">1.</text>
+  <text x="1260" y="330" fill="#243221" font-size="22">"Approve the Q3 hiring plan"</text>
+  <rect x="1180" y="380" width="800" height="80" rx="8" fill="#FFFFFF" stroke="#4B6147" stroke-width="2"/>
+  <text x="1220" y="430" fill="#4B6147" font-size="22" font-weight="700">2.</text>
+  <text x="1260" y="430" fill="#243221" font-size="22">"Align on fundraising timeline"</text>
+  <rect x="1180" y="480" width="800" height="80" rx="8" fill="#FFFFFF" stroke="#4B6147" stroke-width="2"/>
+  <text x="1220" y="530" fill="#4B6147" font-size="22" font-weight="700">3.</text>
+  <text x="1260" y="530" fill="#243221" font-size="22">"Decide on pricing restructure"</text>
+  <rect x="1180" y="620" width="800" height="100" rx="10" fill="#4B6147"/>
+  <text x="1580" y="665" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">Boards that start with decisions run 40% shorter</text>
+  <text x="1580" y="698" text-anchor="middle" fill="#DDD8CD" font-size="20" font-weight="600">and produce 3x more actionable outcomes</text>
+  <text x="1620" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="18">1/8</text>
+
+  <!-- SLIDE 3: Slide 2 - Metrics -->
+  <rect x="2160" y="0" width="1080" height="1350" fill="#DDD8CD"/>
+  <rect x="2160" y="0" width="1080" height="120" fill="#4B6147"/>
+  <text x="2700" y="50" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="600">SLIDE 2</text>
+  <text x="2700" y="90" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">Key Metrics Dashboard</text>
+  <text x="2700" y="200" text-anchor="middle" fill="#243221" font-size="22" font-weight="600">4 quarters of trailing data. Benchmarked.</text>
+  <rect x="2260" y="240" width="800" height="60" rx="6" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="2300" y="280" fill="#243221" font-size="20" font-weight="600">📈 ARR Growth Rate</text>
+  <rect x="2260" y="315" width="800" height="60" rx="6" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="2300" y="355" fill="#243221" font-size="20" font-weight="600">🔄 Net Revenue Retention</text>
+  <rect x="2260" y="390" width="800" height="60" rx="6" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="2300" y="430" fill="#243221" font-size="20" font-weight="600">🔥 Burn Multiple</text>
+  <rect x="2260" y="465" width="800" height="60" rx="6" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="2300" y="505" fill="#243221" font-size="20" font-weight="600">⏱ CAC Payback Period</text>
+  <rect x="2260" y="540" width="800" height="60" rx="6" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="2300" y="580" fill="#243221" font-size="20" font-weight="600">💰 Gross Margin</text>
+  <rect x="2260" y="640" width="800" height="60" rx="8" fill="#4B6147"/>
+  <text x="2660" y="678" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="600">No cherry-picking. Show the trends.</text>
+  <text x="2700" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="18">2/8</text>
+
+  <!-- SLIDE 4: Slide 3+4 - Financial + Cash -->
+  <rect x="3240" y="0" width="1080" height="1350" fill="#DDD8CD"/>
+  <rect x="3240" y="0" width="1080" height="120" fill="#4B6147"/>
+  <text x="3780" y="50" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="600">SLIDES 3 &amp; 4</text>
+  <text x="3780" y="90" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">Financials + Cash Position</text>
+  <rect x="3340" y="160" width="800" height="250" rx="10" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="2"/>
+  <text x="3740" y="200" text-anchor="middle" fill="#4B6147" font-size="22" font-weight="700">Slide 3: Financial Summary</text>
+  <text x="3380" y="240" fill="#243221" font-size="18">• P&amp;L actual vs. budget variance</text>
+  <text x="3380" y="275" fill="#243221" font-size="18">• Top 3 largest variances (positive and negative)</text>
+  <text x="3380" y="310" fill="#243221" font-size="18">• One-sentence explanation for each</text>
+  <text x="3380" y="380" fill="#5A7A54" font-size="16" font-style="italic">Board members need to know where you're off-plan.</text>
+  <rect x="3340" y="430" width="800" height="280" rx="10" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="2"/>
+  <text x="3740" y="470" text-anchor="middle" fill="#4B6147" font-size="22" font-weight="700">Slide 4: Cash Position &amp; Forecast</text>
+  <text x="3380" y="510" fill="#243221" font-size="18">• Current cash balance</text>
+  <text x="3380" y="545" fill="#243221" font-size="18">• Monthly net burn rate</text>
+  <text x="3380" y="580" fill="#243221" font-size="18">• Months of runway</text>
+  <text x="3380" y="615" fill="#243221" font-size="18">• 13-week cash flow summary</text>
+  <text x="3380" y="650" fill="#243221" font-size="18">• Base vs. downside runway scenarios</text>
+  <text x="3380" y="690" fill="#5A7A54" font-size="16" font-style="italic">This answers every cash question before it's asked.</text>
+  <text x="3780" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="18">3-4/8</text>
+
+  <!-- SLIDE 5: Slide 5 - Scenarios -->
+  <rect x="4320" y="0" width="1080" height="1350" fill="#DDD8CD"/>
+  <rect x="4320" y="0" width="1080" height="120" fill="#4B6147"/>
+  <text x="4860" y="50" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="600">SLIDE 5</text>
+  <text x="4860" y="90" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">Forward-Looking Scenarios</text>
+  <rect x="4420" y="180" width="800" height="150" rx="10" fill="#4B6147"/>
+  <text x="4820" y="225" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="700">UPSIDE CASE</text>
+  <text x="4820" y="260" text-anchor="middle" fill="#DDD8CD" font-size="18">Best plausible assumptions play out</text>
+  <text x="4820" y="295" text-anchor="middle" fill="#DDD8CD" font-size="18">Enterprise deal closes, new channel performs</text>
+  <rect x="4420" y="350" width="800" height="150" rx="10" fill="#5A7A54"/>
+  <text x="4820" y="395" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="700">BASE CASE</text>
+  <text x="4820" y="430" text-anchor="middle" fill="#DDD8CD" font-size="18">Most likely outcome (60% probability)</text>
+  <text x="4820" y="465" text-anchor="middle" fill="#DDD8CD" font-size="18">Grounded in trailing 6-month trends</text>
+  <rect x="4420" y="520" width="800" height="150" rx="10" fill="#8B4513" opacity="0.7"/>
+  <text x="4820" y="565" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="700">DOWNSIDE CASE</text>
+  <text x="4820" y="600" text-anchor="middle" fill="#DDD8CD" font-size="18">Growth slows, key churn, hiring delays</text>
+  <text x="4820" y="635" text-anchor="middle" fill="#DDD8CD" font-size="18">This defines your risk exposure</text>
+  <text x="4860" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="18">5/8</text>
+
+  <!-- SLIDE 6: Slides 6+7 - GTM + Team -->
+  <rect x="5400" y="0" width="1080" height="1350" fill="#DDD8CD"/>
+  <rect x="5400" y="0" width="1080" height="120" fill="#4B6147"/>
+  <text x="5940" y="50" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="600">SLIDES 6 &amp; 7</text>
+  <text x="5940" y="90" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">GTM + Product &amp; Team</text>
+  <rect x="5500" y="160" width="800" height="220" rx="10" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="2"/>
+  <text x="5900" y="200" text-anchor="middle" fill="#4B6147" font-size="22" font-weight="700">Slide 6: GTM &amp; Pipeline</text>
+  <text x="5540" y="240" fill="#243221" font-size="18">• Pipeline coverage ratio</text>
+  <text x="5540" y="275" fill="#243221" font-size="18">• Conversion rates by stage</text>
+  <text x="5540" y="310" fill="#243221" font-size="18">• Next quarter bookings potential</text>
+  <text x="5540" y="355" fill="#5A7A54" font-size="16" font-style="italic">One sentence on what's working. One on what needs attention.</text>
+  <rect x="5500" y="400" width="800" height="200" rx="10" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="2"/>
+  <text x="5900" y="440" text-anchor="middle" fill="#4B6147" font-size="22" font-weight="700">Slide 7: Product &amp; Team</text>
+  <text x="5540" y="480" fill="#243221" font-size="18">• Key product milestones (delivered + upcoming)</text>
+  <text x="5540" y="515" fill="#243221" font-size="18">• Headcount: actual vs. plan</text>
+  <text x="5540" y="550" fill="#243221" font-size="18">• Key hires + open roles</text>
+  <text x="5540" y="580" fill="#5A7A54" font-size="16" font-style="italic">3-4 bullet points max. Not a sprint retrospective.</text>
+  <text x="5940" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="18">6-7/8</text>
+
+  <!-- SLIDE 7: Slide 8 - Asks -->
+  <rect x="6480" y="0" width="1080" height="1350" fill="#DDD8CD"/>
+  <rect x="6480" y="0" width="1080" height="120" fill="#4B6147"/>
+  <text x="7020" y="50" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="600">SLIDE 8</text>
+  <text x="7020" y="90" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">Specific Asks</text>
+  <text x="7020" y="220" text-anchor="middle" fill="#243221" font-size="24" font-weight="600">End with what you need. Not "any questions?"</text>
+  <rect x="6580" y="280" width="800" height="80" rx="8" fill="#4B6147"/>
+  <text x="6980" y="330" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="600">"Approve X by Y date"</text>
+  <rect x="6580" y="380" width="800" height="80" rx="8" fill="#5A7A54"/>
+  <text x="6980" y="430" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="600">"Introduction to Z investor/partner"</text>
+  <rect x="6580" y="480" width="800" height="80" rx="8" fill="#DDD8CD"/>
+  <text x="6980" y="530" text-anchor="middle" fill="#243221" font-size="22" font-weight="600">"Feedback on this decision framework"</text>
+  <rect x="6580" y="620" width="800" height="100" rx="10" fill="#4B6147"/>
+  <text x="6980" y="660" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="700">A great board deck is 8 slides</text>
+  <text x="6980" y="698" text-anchor="middle" fill="#DDD8CD" font-size="24" font-weight="700">that drive 3 decisions.</text>
+  <text x="7020" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="18">8/8</text>
+
+  <!-- Logo on CTA Slide -->
+  <image href="/Users/christianwutz/Desktop/RedySet/Clients/Centripetal Advisors/Centripetal_Pentagon/linkedin_assets/LinkedIn Assets/Centripetal_LinkedIn_Profile.png" x="8035" y="300" width="130" height="130"/>
+
+  <!-- SLIDE 8: CTA -->
+  <rect x="7560" y="0" width="1080" height="1350" fill="#4B6147"/>
+  <text x="8100" y="450" text-anchor="middle" fill="#DDD8CD" font-size="24" font-weight="600" letter-spacing="3">CENTRIPETAL ADVISORS</text>
+  <text x="8100" y="550" text-anchor="middle" fill="#FFFFFF" font-size="44" font-weight="800">Want this template?</text>
+  <text x="8100" y="650" text-anchor="middle" fill="#DDD8CD" font-size="28" font-weight="400">DM us for the board deck template</text>
+  <text x="8100" y="700" text-anchor="middle" fill="#DDD8CD" font-size="28" font-weight="400">with formatting, example metrics,</text>
+  <text x="8100" y="750" text-anchor="middle" fill="#DDD8CD" font-size="28" font-weight="400">and placeholder formulas.</text>
+  <rect x="7800" y="830" width="600" height="70" rx="35" fill="#DDD8CD"/>
+  <text x="8100" y="875" text-anchor="middle" fill="#243221" font-size="24" font-weight="700">Follow for more frameworks</text>
+  <text x="8100" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="16">#BoardDeck #StartupFinance #SaaS #CentripetalAdvisors</text>
+</svg>
