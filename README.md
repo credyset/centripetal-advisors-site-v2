@@ -11,6 +11,8 @@ Key additions in this pass:
 - Scenario Modeling field note
 - LTV:CAC by Customer Segment field note
 - Shared mobile navigation and editorial overflow handling
+- Resources hub connecting guides, tools, and field notes
+- Local cash-flow and board-reporting visuals integrated into matching articles
 - Structured data and direct-answer blocks for the new content layer
 
 See [QA_V2_2026-08-18.md](QA_V2_2026-08-18.md) for validation results and the known local screenshot limitation.
