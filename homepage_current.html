@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Centripetal Advisors — Homepage (Live Mirror)</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; background: #111; color: #fff; }
+
+  .banner {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+  }
+  .banner a { color: #D4A843; text-decoration: none; }
+
+  iframe {
+    width: 100%;
+    height: calc(100vh - 44px);
+    border: none;
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="banner">
+    Live mirror of <a href="https://centripetaladvisors.com" target="_blank">centripetaladvisors.com</a>
+    &nbsp;·&nbsp; Last deployed Aug 9, 2026
+    &nbsp;·&nbsp; Read-only local reference
+  </div>
+  <iframe src="https://centripetaladvisors.com" sandbox="allow-scripts allow-same-origin" loading="eager"></iframe>
+<script src="assets/site-nav.js"></script></body>
+</html>
