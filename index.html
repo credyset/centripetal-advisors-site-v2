@@ -1,681 +1,206 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="assets/favicon-dark.png" media="(prefers-color-scheme: light)" rel="icon"/>
 <link href="assets/favicon-light.png" media="(prefers-color-scheme: dark)" rel="icon"/>
-<title>Centripetal Advisors — Strategic finance for B2B SaaS founders</title>
-<meta content="Centripetal Advisors provides strategic finance for B2B SaaS companies and founders. Fractional CFO, board reporting, treasury management, and fundraising support." name="description"/>
-<meta content="Centripetal Advisors — Strategic finance for B2B SaaS founders" property="og:title"/>
-<meta content="Centripetal Advisors provides strategic finance for B2B SaaS companies and founders. Fractional CFO, board reporting, treasury management, and fundraising support." property="og:description"/>
-<meta content="assets/reference/og-mark.png" property="og:image"/>
-<meta content="website" property="og:type"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Centripetal Advisors","url":"https://centripetaladvisors.com/","description":"Strategic finance support for B2B SaaS companies.","founder":{"@type":"Person","name":"Charles Solomon","jobTitle":"Founder/Managing Partner"},"areaServed":"United States","serviceType":["Fractional CFO","Board and investor reporting","Cash and treasury management","Fundraising and capital strategy"]}</script>
+<title>Centripetal Advisors — Strategic CFO Services for Enterprise SaaS</title>
+<meta content="Centripetal Advisors provides embedded fractional CFO services for B2B SaaS founders. Board reporting, cash management, fundraising support, and financial infrastructure that scales with you." name="description"/>
+<meta property="og:title" content="Centripetal Advisors — Strategic CFO Services for Enterprise SaaS"/>
+<meta property="og:description" content="Embedded fractional CFO services for B2B SaaS founders. Board reporting, cash management, fundraising support, and financial infrastructure."/>
+<meta property="og:image" content="assets/reference/og-mark.png"/>
+<meta property="og:type" content="website"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Centripetal Advisors","url":"https://centripetaladvisors.com/","description":"Embedded fractional CFO services for B2B SaaS founders.","founder":{"@type":"Person","name":"Charles Solomon","jobTitle":"Founder/Managing Partner"},"areaServed":"United States","serviceType":["Fractional CFO","Board and investor reporting","Cash and treasury management","Fundraising and capital strategy"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Centripetal Advisors","url":"https://credyset.github.io/centripetal-advisors-site-v2/","publisher":{"@type":"Organization","name":"Centripetal Advisors"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Centripetal Advisors help B2B SaaS founders do?","acceptedAnswer":{"@type":"Answer","text":"Centripetal provides embedded strategic finance support across forecasting, board and investor reporting, treasury, fundraising, and the finance infrastructure behind growth."}},{"@type":"Question","name":"When does a fractional CFO fit better than hiring a VP Finance?","acceptedAnswer":{"@type":"Answer","text":"When the company needs senior financial judgment and embedded operating support, but the day-to-day finance ownership does not yet justify an in-house VP Finance."}},{"@type":"Question","name":"What happens in the first conversation?","acceptedAnswer":{"@type":"Answer","text":"The conversation starts with the finance question creating the most pressure—cash, capital, reporting, or finance ownership—and works toward the next useful step."}}]}</script>
-<meta content="assets/logo-light.png" property="og:image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Centripetal Advisors help B2B SaaS founders do?","acceptedAnswer":{"@type":"Answer","text":"Centripetal provides embedded strategic finance support across forecasting, board and investor reporting, treasury, fundraising, and the finance infrastructure behind growth."}},{"@type":"Question","name":"When does a fractional CFO fit better than hiring a VP Finance?","acceptedAnswer":{"@type":"Answer","text":"When the company needs senior financial judgment and embedded operating support, but the day-to-day finance ownership does not yet justify an in-house VP Finance."}},{"@type":"Question","name":"What happens in the first conversation?","acceptedAnswer":{"@type":"Answer","text":"The conversation starts with the finance question creating the most pressure — cash, capital, reporting, or finance ownership — and works toward the next useful step."}}]}</script>
+<link href="https://credyset.github.io/centripetal-advisors-site-v2/index.html" rel="canonical"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://credyset.github.io/centripetal-advisors-site-v2/"}]}</script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Roboto:wght@300;400;500;700&amp;family=Fragment+Mono&amp;display=swap" rel="stylesheet"/>
 <style>
-    /* ===== Reset & Base ===== */
-    *, *::before, *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #2D2D2D;
-      background-color: #DDD8CD;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Lora', serif;
-      font-weight: 600;
-      line-height: 1.3;
-      color: #243221;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      transition: color 0.25s ease;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .container {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* ===== Navigation ===== */
-    .nav {
-      background-color: #243221;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .nav .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 72px;
-    }
-
-    .nav-logo { display:flex; align-items:center; text-decoration:none; }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      list-style: none;
-      gap: 8px;
-    }
-
-    .nav-links > li {
-      position: relative;
-    }
-
-    .nav-links > li > a {
-      display: block;
-      padding: 8px 16px;
-      color: #DDD8CD;
-      font-size: 15px;
-      font-weight: 400;
-      letter-spacing: 0.3px;
-      border-radius: 6px;
-      transition: color 0.25s ease, background-color 0.25s ease;
-    }
-
-    .nav-links > li > a:hover,
-    .nav-links > li > a.active {
-      color: #F2F2F2;
-      background-color: rgba(255, 255, 255, 0.08);
-    }
-
-    /* Resources dropdown */
-    .dropdown-trigger {
-      cursor: default;
-    }
-
-    .dropdown-trigger::after {
-      content: '';
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-right: 1.5px solid #DDD8CD;
-      border-bottom: 1.5px solid #DDD8CD;
-      transform: rotate(45deg);
-      margin-left: 6px;
-      margin-bottom: 2px;
-      transition: transform 0.25s ease, border-color 0.25s ease;
-    }
-
-    .dropdown {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      min-width: 180px;
-      background-color: #243221;
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-      padding: 8px 0;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(8px);
-      transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
-      margin-top: 4px;
-    }
-
-    .nav-links > li:hover .dropdown {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .nav-links > li:hover .dropdown-trigger::after {
-      transform: rotate(-135deg);
-      border-color: #F2F2F2;
-    }
-
-    .dropdown a {
-      display: block;
-      padding: 10px 20px;
-      color: #DDD8CD;
-      font-size: 14px;
-      transition: color 0.2s ease, background-color 0.2s ease;
-    }
-
-    .dropdown a:hover {
-      color: #F2F2F2;
-      background-color: rgba(255, 255, 255, 0.08);
-    }
-
-    /* Mobile hamburger */
-    .nav-toggle {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      gap: 5px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 4px;
-      width: 32px;
-      height: 32px;
-    }
-
-    .nav-toggle span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background-color: #DDD8CD;
-      border-radius: 2px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    /* ===== Hero Section ===== */
-    .hero {
-      background-color: #243221;
-      padding: 100px 0 110px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(75, 97, 71, 0.35) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero .container {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero h1 {
-      font-size: 52px;
-      font-weight: 700;
-      color: #F2F2F2;
-      max-width: 780px;
-      margin: 0 auto 24px;
-      letter-spacing: -0.5px;
-    }
-
-    .hero p {
-      font-size: 19px;
-      color: #DDD8CD;
-      max-width: 620px;
-      margin: 0 auto 40px;
-      font-weight: 300;
-      line-height: 1.7;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      background-color: #4B6147;
-      color: #243221;
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      font-weight: 600;
-      padding: 16px 36px;
-      border-radius: 8px;
-      letter-spacing: 0.3px;
-      transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
-      box-shadow: 0 4px 16px rgba(212, 168, 67, 0.25);
-    }
-
-    .btn-primary:hover {
-      background-color: #c69a38;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 24px rgba(212, 168, 67, 0.35);
-    }
-
-    /* ===== Services Section ===== */
-    .services {
-      padding: 100px 0;
-      background-color: #DDD8CD;
-    }
-
-    .section-label {
-      display: block;
-      font-family: 'Roboto', sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: #4B6147;
-      margin-bottom: 16px;
-      text-align: center;
-    }
-
-    .section-heading {
-      font-size: 40px;
-      text-align: center;
-      margin-bottom: 16px;
-      color: #243221;
-    }
-
-    .section-subheading {
-      text-align: center;
-      font-size: 17px;
-      color: #5A5A5A;
-      max-width: 560px;
-      margin: 0 auto 56px;
-      font-weight: 300;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 28px;
-    }
-
-    .service-card {
-      background-color: #FFFFFF;
-      border-radius: 12px;
-      padding: 36px 28px;
-      box-shadow: 0 2px 12px rgba(36, 50, 33, 0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .service-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 32px rgba(36, 50, 33, 0.1);
-    }
-
-    .service-icon {
-      width: 48px;
-      height: 48px;
-      background-color: rgba(75, 97, 71, 0.1);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    .service-icon svg {
-      width: 24px;
-      height: 24px;
-      stroke: #4B6147;
-      fill: none;
-      stroke-width: 1.8;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .service-card h3 {
-      font-size: 20px;
-      margin-bottom: 12px;
-      color: #243221;
-    }
-
-    .service-card p {
-      font-size: 15px;
-      color: #5A5A5A;
-      line-height: 1.65;
-      margin-bottom: 20px;
-      flex-grow: 1;
-    }
-
-    .service-link {
-      font-size: 14px;
-      font-weight: 600;
-      color: #4B6147;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.25s ease, gap 0.25s ease;
-    }
-
-    .service-link:hover {
-      color: #4B6147;
-      gap: 10px;
-    }
-
-    .service-link::after {
-      content: '\2192';
-      font-size: 16px;
-    }
-
-    /* ===== Testimonials Section ===== */
-    .testimonials {
-      padding: 100px 0;
-      background-color: #EFEBE2;
-    }
-
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
-    }
-
-    .testimonial-card {
-      background-color: #FFFFFF;
-      border-radius: 12px;
-      padding: 40px 36px;
-      box-shadow: 0 2px 12px rgba(36, 50, 33, 0.06);
-      position: relative;
-    }
-
-    .testimonial-card::before {
-      content: '\201C';
-      font-family: 'Lora', serif;
-      font-size: 72px;
-      color: #4B6147;
-      opacity: 0.35;
-      position: absolute;
-      top: 16px;
-      left: 28px;
-      line-height: 1;
-    }
-
-    .testimonial-card p {
-      font-size: 16px;
-      line-height: 1.75;
-      color: #3D3D3D;
-      font-style: italic;
-      position: relative;
-      z-index: 1;
-    }
-
-    .testimonial-bar {
-      width: 40px;
-      height: 3px;
-      background-color: #4B6147;
-      border-radius: 2px;
-      margin-top: 24px;
-    }
-
-    /* ===== CTA Section ===== */
-    .cta {
-      padding: 100px 0;
-      background-color: #4B6147;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .cta::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(ellipse at 50% 100%, rgba(36, 50, 33, 0.5) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .cta .container {
-      position: relative;
-      z-index: 1;
-    }
-
-    .cta h2 {
-      font-size: 40px;
-      color: #F2F2F2;
-      max-width: 600px;
-      margin: 0 auto 16px;
-    }
-
-    .cta p {
-      font-size: 17px;
-      color: #DDD8CD;
-      max-width: 480px;
-      margin: 0 auto 40px;
-      font-weight: 300;
-    }
-
-    /* ===== Footer ===== */
-    .footer {
-      background-color: #243221;
-      padding: 56px 0 32px;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid rgba(221, 216, 205, 0.12);
-    }
-
-    .footer-brand h3 {
-      font-family: 'Lora', serif;
-      font-size: 22px;
-      font-weight: 700;
-      color: #F2F2F2;
-      margin-bottom: 8px;
-    }
-
-    .footer-brand p {
-      font-size: 14px;
-      color: #9DA898;
-      max-width: 280px;
-      line-height: 1.6;
-    }
-
-    .footer-nav h4 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #DDD8CD;
-      margin-bottom: 16px;
-    }
-
-    .footer-nav ul {
-      list-style: none;
-    }
-
-    .footer-nav li {
-      margin-bottom: 10px;
-    }
-
-    .footer-nav a {
-      font-size: 14px;
-      color: #9DA898;
-      transition: color 0.25s ease;
-    }
-
-    .footer-nav a:hover {
-      color: #4B6147;
-    }
-
-    .footer-bottom {
-      padding-top: 28px;
-      text-align: center;
-      font-size: 13px;
-      color: #6B7A66;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 1024px) {
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .nav-toggle {
-        display: flex;
-      }
-
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 72px;
-        left: 0;
-        right: 0;
-        background-color: #243221;
-        flex-direction: column;
-        padding: 16px 24px 24px;
-        gap: 4px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      }
-
-      .nav-links.open {
-        display: flex;
-      }
-
-      .nav-links > li > a {
-        padding: 12px 16px;
-      }
-
-      /* Mobile dropdown always visible when parent open */
-      .dropdown {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        margin-top: 0;
-        padding: 0 0 0 16px;
-        background-color: transparent;
-      }
-
-      .hero {
-        padding: 72px 0 80px;
-      }
-
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 17px;
-      }
-
-      .section-heading {
-        font-size: 32px;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-
-      .cta h2 {
-        font-size: 32px;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-        gap: 32px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 30px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
-      .btn-primary {
-        padding: 14px 28px;
-        font-size: 15px;
-      }
-
-      .service-card {
-        padding: 28px 24px;
-      }
-
-      .testimonial-card {
-        padding: 32px 28px;
-      }
-    }
-  </style>
-<link data-site-system="" href="assets/site-system.css" rel="stylesheet"/>
-<style>
-  /* Homepage composition follows the live Centripetal reference: proof first, then the operating story. */
-  .proof-band{background:#ddd8cd;border-bottom:1px solid rgba(36,50,33,.08);}
-  .proof-grid{max-width:1140px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
-  .proof-value{font:400 clamp(42px,5vw,62px)/1 'Lora',Georgia,serif;color:#4b6147;letter-spacing:-.03em;}
-  .proof-label{margin-top:16px;color:#4b6147;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2.4px;text-transform:uppercase;}
-  .home-answer{background:#fff;padding:28px 24px 0}.home-answer-inner{max-width:900px;margin:0 auto;padding:22px 26px;border-left:3px solid #4b6147;background:#ddd8cd;color:#243221;font-size:18px;line-height:1.65}.home-answer-inner strong{font-family:'Lora',Georgia,serif;font-weight:400}.home-faq{background:#fff;padding:0 24px 72px}.home-faq-inner{max-width:900px;margin:0 auto;padding-top:52px;border-top:1px solid rgba(75,97,71,.18)}.home-faq h2{margin:0 0 20px;color:#243221;font:400 32px/1.2 'Lora',Georgia,serif}.home-faq-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.home-faq-list details{padding:18px 20px;background:#f2f2f2;border:1px solid rgba(75,97,71,.22);border-radius:8px}.home-faq-list summary{cursor:pointer;color:#243221;font-weight:600;line-height:1.4}.home-faq-list p{margin:10px 0 0;color:#555;font-size:16px;line-height:1.65}
-  .copilot{background:#f2f2f2;padding:104px 24px;}
-  .copilot-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:92px;align-items:center;}
-  .copilot-kicker,.reference-kicker{display:block;margin-bottom:20px;color:#4b6147;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2.5px;text-transform:uppercase;}
-  .copilot h2,.reference-panel h2{margin:0 0 24px;color:#243221;font:400 clamp(38px,4.2vw,60px)/1.1 'Lora',Georgia,serif;letter-spacing:-.03em;}
-  .copilot p{max-width:590px;color:#666;font-size:17px;line-height:1.85;}
-  .copilot-list{margin:28px 0 0;padding:0;list-style:none;display:grid;gap:13px;}
-  .copilot-list li{position:relative;padding-left:26px;color:#333;font-size:16px;line-height:1.55;}
-  .copilot-list li::before{content:'+';position:absolute;left:0;top:-2px;color:#4b6147;font:400 22px/1 'Lora',serif;}
-  .copilot-note{padding:44px;background:#243221;color:#ddd8cd;position:relative;min-height:360px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
-  .copilot-note::before{content:'';position:absolute;width:340px;height:340px;right:-100px;top:-100px;border:1px solid rgba(221,216,205,.28);border-radius:46% 54% 52% 48%;transform:rotate(24deg);box-shadow:0 0 0 12px rgba(221,216,205,.05),0 0 0 24px rgba(221,216,205,.04);}
-  .copilot-note strong{position:relative;z-index:1;color:#f2f2f2;font:400 30px/1.25 'Lora',Georgia,serif;}
-  .copilot-note span{position:relative;z-index:1;margin-top:18px;color:#ddd8cd;font:400 11px/1.5 'Fragment Mono',monospace;letter-spacing:2px;text-transform:uppercase;}
-  .reference-panel{background:#ddd8cd;padding:104px 24px;}
-  .reference-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .reference-card{padding:30px 28px;border-top:1px solid #4b6147;}
-  .reference-card h3{margin:0 0 12px;color:#243221;font:400 25px/1.25 'Lora',Georgia,serif;}
-  .reference-card p{margin:0;color:#666;font-size:15px;line-height:1.7;}
-  .quote-band{background:#243221;padding:90px 24px;text-align:center;color:#ddd8cd;}
-  .quote-band blockquote{max-width:840px;margin:0 auto 20px;font:400 clamp(25px,3.2vw,43px)/1.35 'Lora',Georgia,serif;letter-spacing:-.02em;}
-  .quote-band cite{color:#ddd8cd;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2px;text-transform:uppercase;font-style:normal;}
-  @media(max-width:800px){.proof-grid{grid-template-columns:repeat(2,1fr);padding:38px 20px;gap:30px 12px}.copilot,.reference-panel{padding:72px 20px}.copilot-grid{grid-template-columns:1fr;gap:44px}.reference-grid{grid-template-columns:1fr;gap:28px}.copilot-note{min-height:280px}.home-answer{padding:24px 20px 0}.home-answer-inner{padding:20px;font-size:17px;overflow-wrap:anywhere}.home-faq{padding:0 20px 56px}.home-faq-list{grid-template-columns:1fr}}
-  @media(max-width:420px){.proof-value{font-size:38px}.proof-label{font-size:10px;letter-spacing:1.6px}.copilot h2,.reference-panel h2{font-size:38px}}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Roboto',sans-serif;font-weight:400;font-size:16px;line-height:1.7;color:#2D2D2D;background-color:#DDD8CD}
+h1,h2,h3,h4,h5,h6{font-family:'Lora',serif;font-weight:600;line-height:1.3;color:#243221}
+a{text-decoration:none;color:inherit;transition:color .25s ease}
+img{max-width:100%;display:block}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* ===== Navigation ===== */
+.nav{background-color:#243221;position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.nav .container{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo{display:flex;align-items:center;text-decoration:none}
+.nav-links{display:flex;align-items:center;list-style:none;gap:8px}
+.nav-links>li{position:relative}
+.nav-links>li>a{display:block;padding:8px 16px;color:#DDD8CD;font-size:15px;font-weight:400;letter-spacing:.3px;border-radius:6px;transition:color .25s ease,background-color .25s ease}
+.nav-links>li>a:hover,.nav-links>li>a.active{color:#F2F2F2;background-color:rgba(255,255,255,.08)}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:4px;width:32px;height:32px}
+.nav-toggle span{display:block;width:24px;height:2px;background-color:#DDD8CD;border-radius:2px;transition:transform .3s ease,opacity .3s ease}
+
+/* ===== Hero ===== */
+.hero{background-color:#243221;padding:100px 0 60px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 0%,rgba(75,97,71,.35) 0%,transparent 70%);pointer-events:none}
+.hero .container{position:relative;z-index:1}
+.hero h1{font-size:52px;font-weight:700;color:#F2F2F2;max-width:780px;margin:0 auto 12px;letter-spacing:-.5px}
+.hero-eyebrow{display:block;font:400 13px/1.4 'Fragment Mono',monospace;letter-spacing:2.5px;text-transform:uppercase;color:#DDD8CD;opacity:.7;margin-bottom:32px}
+.hero .btn-primary{margin-bottom:0}
+.btn-primary{display:inline-block;background-color:#4B6147;color:#F2F2F2;font-family:'Roboto',sans-serif;font-size:16px;font-weight:600;padding:16px 36px;border-radius:8px;letter-spacing:.3px;transition:background-color .25s ease,transform .2s ease,box-shadow .25s ease;box-shadow:0 4px 16px rgba(75,97,71,.25)}
+.btn-primary:hover{background-color:#3a4f38;transform:translateY(-2px);box-shadow:0 6px 24px rgba(75,97,71,.35)}
+
+/* ===== Proof Band ===== */
+.proof-band{background:#243221;border-top:1px solid rgba(221,216,205,.08);padding:0 0 80px}
+.proof-grid{max-width:900px;margin:0 auto;padding:48px 24px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.proof-value{font:400 clamp(42px,5vw,62px)/1 'Lora',Georgia,serif;color:#DDD8CD;letter-spacing:-.03em}
+.proof-label{margin-top:16px;color:#DDD8CD;opacity:.6;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2.4px;text-transform:uppercase}
+
+/* ===== Direct Answer (SEO) ===== */
+.home-answer{background:#DDD8CD;padding:48px 24px 0}
+.home-answer-inner{max-width:900px;margin:0 auto;padding:22px 26px;border-left:3px solid #4b6147;background:#F2F2F2;color:#243221;font-size:18px;line-height:1.65}
+.home-answer-inner strong{font-family:'Lora',Georgia,serif;font-weight:400}
+
+/* ===== Co-Pilot ===== */
+.copilot{background:#DDD8CD;padding:104px 24px}
+.copilot-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px;align-items:center}
+.copilot-kicker{display:block;margin-bottom:20px;color:#4b6147;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2.5px;text-transform:uppercase}
+.copilot h2{margin:0 0 24px;color:#243221;font:400 clamp(34px,4.2vw,52px)/1.1 'Lora',Georgia,serif;letter-spacing:-.03em}
+.copilot p{max-width:590px;color:#666;font-size:17px;line-height:1.85}
+.copilot-list{margin:28px 0 0;padding:0;list-style:none;display:grid;gap:13px}
+.copilot-list li{position:relative;padding-left:26px;color:#333;font-size:16px;line-height:1.55}
+.copilot-list li::before{content:'+';position:absolute;left:0;top:-2px;color:#4b6147;font:400 22px/1 'Lora',serif}
+.copilot-visual{background:#243221;border-radius:12px;overflow:hidden;min-height:420px;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 12px 48px rgba(36,50,33,.15)}
+.copilot-visual img{width:70%;height:auto;opacity:.3;position:absolute}
+.copilot-visual-inner{position:relative;z-index:1;text-align:center;padding:48px 32px}
+.copilot-visual-inner img.copilot-logo{height:32px;width:auto;margin:0 auto 16px;opacity:1}
+.copilot-visual-inner p{color:#DDD8CD;font:400 15px/1.6 'Roboto',sans-serif;margin:0}
+.copilot-visual-inner strong{display:block;color:#F2F2F2;font:400 28px/1.25 'Lora',Georgia,serif;margin-bottom:12px}
+
+/* ===== Trusted By ===== */
+.trusted-by{background:#F2F2F2;padding:64px 24px;text-align:center}
+.trusted-by-kicker{display:block;margin-bottom:32px;color:#4b6147;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2.5px;text-transform:uppercase}
+.logo-strip{max-width:1140px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:32px 48px}
+.logo-strip img{height:40px;width:auto;opacity:.55;filter:grayscale(100%);transition:opacity .3s,filter .3s}
+.logo-strip img:hover{opacity:1;filter:grayscale(0%)}
+
+/* ===== About Us ===== */
+.about-us{background:#DDD8CD;padding:104px 24px}
+.about-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:minmax(0,.4fr) minmax(0,.6fr);gap:72px;align-items:center}
+.about-portrait{border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(36,50,33,.1)}
+.about-portrait img{width:100%;height:auto;display:block}
+.about-kicker{display:block;margin-bottom:6px;color:#4b6147;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2.5px;text-transform:uppercase}
+.about-name{margin:0 0 24px;color:#243221;font:400 36px/1.15 'Lora',Georgia,serif}
+.about-us p{color:#555;font-size:16px;line-height:1.8;margin-bottom:16px}
+
+/* ===== Services ===== */
+.services{padding:100px 0;background-color:#F2F2F2}
+.section-label{display:block;font-family:'Roboto',sans-serif;font-size:13px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#4B6147;margin-bottom:16px;text-align:center}
+.section-heading{font-size:40px;text-align:center;margin-bottom:16px;color:#243221}
+.section-subheading{text-align:center;font-size:17px;color:#5A5A5A;max-width:560px;margin:0 auto 56px;font-weight:300}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.service-card{background-color:#FFFFFF;border-radius:12px;padding:36px 28px;box-shadow:0 2px 12px rgba(36,50,33,.06);transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(36,50,33,.1)}
+.service-icon{width:48px;height:48px;background-color:rgba(75,97,71,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.service-icon svg{width:24px;height:24px;stroke:#4B6147;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.service-card h3{font-size:20px;margin-bottom:12px;color:#243221}
+.service-card p{font-size:15px;color:#5A5A5A;line-height:1.65;margin-bottom:20px;flex-grow:1}
+.service-link{font-size:14px;font-weight:600;color:#4B6147;display:inline-flex;align-items:center;gap:6px;transition:color .25s ease,gap .25s ease}
+.service-link:hover{color:#4B6147;gap:10px}
+.service-link::after{content:'\2192';font-size:16px}
+
+/* ===== Why Centripetal ===== */
+.reference-panel{background:#DDD8CD;padding:104px 24px}
+.reference-kicker{display:block;margin-bottom:20px;color:#4b6147;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2.5px;text-transform:uppercase}
+.reference-panel h2{margin:0 0 24px;color:#243221;font:400 clamp(34px,4.2vw,52px)/1.1 'Lora',Georgia,serif;letter-spacing:-.03em}
+.reference-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.reference-card{padding:30px 28px;border-top:1px solid #4b6147}
+.reference-card h3{margin:0 0 12px;color:#243221;font:400 22px/1.25 'Lora',Georgia,serif}
+.reference-card p{margin:0;color:#666;font-size:15px;line-height:1.7}
+
+/* ===== Munger Quote ===== */
+.quote-band{background:#243221;padding:90px 24px;text-align:center;color:#ddd8cd}
+.quote-band blockquote{max-width:840px;margin:0 auto 20px;font:400 clamp(25px,3.2vw,43px)/1.35 'Lora',Georgia,serif;letter-spacing:-.02em}
+.quote-band cite{color:#ddd8cd;font:400 11px/1.4 'Fragment Mono',monospace;letter-spacing:2px;text-transform:uppercase;font-style:normal}
+
+/* ===== Testimonials ===== */
+.testimonials{padding:100px 0;background-color:#F2F2F2}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.testimonial-card{background-color:#FFFFFF;border-radius:12px;padding:40px 36px;box-shadow:0 2px 12px rgba(36,50,33,.06);position:relative}
+.testimonial-card::before{content:'\201C';font-family:'Lora',serif;font-size:72px;color:#4B6147;opacity:.35;position:absolute;top:16px;left:28px;line-height:1}
+.testimonial-card p.testimonial-text{font-size:16px;line-height:1.75;color:#3D3D3D;font-style:italic;position:relative;z-index:1;margin:0 0 16px}
+.testimonial-bar{width:40px;height:3px;background-color:#4B6147;border-radius:2px;margin-bottom:12px}
+.testimonial-name{font-size:14px;font-weight:600;color:#243221;margin:0}
+.testimonial-role{font-size:13px;color:#666;margin:0}
+
+/* ===== Featured Insights ===== */
+.featured-insights{padding:80px 24px;background:#DDD8CD}
+.insights-grid{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.insight-card{background:#fff;border:1px solid #c8c3b8;border-radius:8px;padding:28px 24px;text-decoration:none;color:#243221;transition:box-shadow .2s,transform .2s}
+.insight-card:hover{box-shadow:0 8px 24px rgba(36,50,33,.08);transform:translateY(-2px)}
+.insight-tag{font-size:12px;color:#4B6147;text-transform:uppercase;letter-spacing:1.2px;font-weight:500}
+.insight-card h3{font:400 18px/1.3 'Lora',Georgia,serif;margin:8px 0 12px;color:#243221}
+.insight-card p{font-size:14px;color:#666;margin:0;line-height:1.6}
+
+/* ===== FAQ ===== */
+.home-faq{background:#F2F2F2;padding:72px 24px}
+.home-faq-inner{max-width:900px;margin:0 auto}
+.home-faq h2{margin:0 0 28px;color:#243221;font:400 32px/1.2 'Lora',Georgia,serif;text-align:center}
+.home-faq-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.home-faq-list details{padding:18px 20px;background:#fff;border:1px solid rgba(75,97,71,.22);border-radius:8px}
+.home-faq-list summary{cursor:pointer;color:#243221;font-weight:600;line-height:1.4}
+.home-faq-list p{margin:10px 0 0;color:#555;font-size:16px;line-height:1.65}
+
+/* ===== CTA ===== */
+.cta{padding:100px 0;background-color:#4B6147;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 100%,rgba(36,50,33,.5) 0%,transparent 70%);pointer-events:none}
+.cta .container{position:relative;z-index:1}
+.cta h2{font-size:40px;color:#F2F2F2;max-width:600px;margin:0 auto 16px}
+.cta p{font-size:17px;color:#DDD8CD;max-width:480px;margin:0 auto 40px;font-weight:300}
+
+/* ===== Footer ===== */
+.footer{background-color:#243221;padding:56px 0 32px}
+.footer-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(221,216,205,.12)}
+.footer-brand p{font-size:14px;color:#9DA898;max-width:280px;line-height:1.6}
+.footer-nav h4{font-family:'Roboto',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#DDD8CD;margin-bottom:16px}
+.footer-nav ul{list-style:none}
+.footer-nav li{margin-bottom:10px}
+.footer-nav a{font-size:14px;color:#9DA898;transition:color .25s ease}
+.footer-nav a:hover{color:#F2F2F2}
+.footer-bottom{padding-top:28px;text-align:center;font-size:13px;color:#6B7A66}
+
+/* ===== Responsive ===== */
+@media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.reference-grid{grid-template-columns:repeat(2,1fr)}.insights-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.nav-toggle{display:flex}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;background-color:#243221;flex-direction:column;padding:16px 24px 24px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.2)}.nav-links.open{display:flex}.nav-links>li>a{padding:12px 16px}.hero{padding:72px 0 48px}.hero h1{font-size:36px}.proof-grid{grid-template-columns:repeat(2,1fr);padding:38px 20px;gap:30px 12px}.copilot,.about-us,.reference-panel{padding:72px 20px}.copilot-grid,.about-grid{grid-template-columns:1fr;gap:44px}.services-grid{grid-template-columns:1fr;gap:20px}.reference-grid{grid-template-columns:1fr;gap:20px}.testimonials-grid{grid-template-columns:1fr;gap:20px}.insights-grid{grid-template-columns:1fr}.home-faq-list{grid-template-columns:1fr}.cta h2{font-size:32px}.footer-inner{flex-direction:column;gap:32px}}
+@media(max-width:480px){.hero h1{font-size:30px}.btn-primary{padding:14px 28px;font-size:15px}.service-card{padding:28px 24px}.testimonial-card{padding:32px 28px}.proof-value{font-size:38px}.proof-label{font-size:10px;letter-spacing:1.6px}}
 </style>
-<link href="https://credyset.github.io/centripetal-advisors-site-v2/index.html" rel="canonical"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://credyset.github.io/centripetal-advisors-site-v2/"}]}</script></meta></head>
+<link data-site-system="" href="assets/site-system.css" rel="stylesheet"/>
+</head>
 <body>
 <!-- Navigation -->
-<nav aria-label="Primary navigation" class="site-nav"><div class="site-nav-inner">
-<a class="site-wordmark" href="index.html"><img alt="Centripetal Advisors" src="assets/logo-light.png"/></a>
+<nav aria-label="Primary navigation" class="nav">
+<div class="container">
+<a class="nav-logo" href="index.html"><img alt="Centripetal Advisors" src="assets/logo-light.png" style="height:28px;width:auto"/></a>
 <button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle" onclick="const n=this.nextElementSibling;n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))" type="button"><span></span><span></span><span></span></button>
-<div class="site-nav-links">
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-<a href="blog/index.html">Blogs</a>
-<a class="site-nav-cta" href="https://calendly.com/charles-centripetaladvisors/30min" rel="noopener" target="_blank">Book a Free Call</a>
+<ul class="nav-links">
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="blog/index.html">Blogs</a></li>
+<li><a class="btn-primary" href="https://calendly.com/charles-centripetaladvisors/30min" rel="noopener" target="_blank" style="padding:10px 20px;font-size:14px;box-shadow:none">Free Consultation</a></li>
+</ul>
 </div>
-</div></nav>
+</nav>
+
 <!-- Hero -->
 <section class="hero">
 <div class="container">
-<img alt="" aria-hidden="true" class="hero-mark" src="assets/favicon-light.png"/>
 <h1>Strategic CFO Services</h1>
-<p class="hero-eyebrow">Built for B2B SaaS</p>
+<span class="hero-eyebrow">Built for Enterprise SaaS</span>
 <a class="btn-primary" href="https://calendly.com/charles-centripetaladvisors/30min" rel="noopener" target="_blank">Free Consultation</a>
 </div>
 </section>
+
+<!-- Proof Stats -->
 <section aria-label="Centripetal track record" class="proof-band">
 <div class="proof-grid">
 <div><div class="proof-value">7</div><div class="proof-label">Years in service</div></div>
@@ -684,158 +209,198 @@
 <div><div class="proof-value">22+</div><div class="proof-label">Transactions completed</div></div>
 </div>
 </section>
+
+<!-- Direct Answer (SEO/AI surfaceability) -->
 <section aria-label="What Centripetal Advisors does" class="home-answer">
 <div class="home-answer-inner"><strong>Direct answer:</strong> Centripetal Advisors is an embedded strategic finance partner for B2B SaaS founders. The work connects the model, the board room, the cash plan, and the next capital or operating decision.</div>
 </section>
+
+<!-- Your Financial Co-Pilot -->
 <section aria-labelledby="copilot-title" class="copilot">
 <div class="copilot-grid">
 <div>
-<span class="copilot-kicker">Your financial co-pilot</span>
+<span class="copilot-kicker">Your Financial Co-Pilot</span>
 <h2 id="copilot-title">Clarity for the decisions that move the company.</h2>
-<p>We combine strategic financial market knowledge with operational expertise, giving SaaS founders a senior finance partner who can move between the model, the board room, and the next hard decision.</p>
+<p>We combine strategic financial market knowledge and operational expertise, guiding SaaS founders to success. Our commitment is built on trust, transparency, and real operating results.</p>
+<p style="margin-top:16px;color:#555;font-size:16px">Our clients benefit from having a partner who can:</p>
 <ul class="copilot-list">
-<li>Raise debt or equity at the most favorable terms possible.</li>
-<li>See how the business is performing against goals and benchmarks.</li>
-<li>Keep finance and accounting ready for investor scrutiny.</li>
-<li>Scale operations through a data-driven operating cadence.</li>
-<li>Build a dedicated partner for the founder journey.</li>
+<li>Help raise capital (debt or equity) at the most favorable terms possible</li>
+<li>Gain key insights into how the business is performing against goals and industry benchmarks</li>
+<li>Ensure finance and accounting functions are managed to meet investor standards, with necessary data accessible at all times</li>
+<li>Scale business operations through a data-driven approach</li>
+<li>Never worry about tax preparation ever again</li>
+<li>Evaluate and execute M&amp;A when appropriate</li>
+<li>Partner with a dedicated co-pilot who provides both professional and personal founder support</li>
 </ul>
-<a class="service-link" href="services.html" style="display:inline-flex;margin-top:28px">View Services  →</a>
+<a class="service-link" href="services.html" style="display:inline-flex;margin-top:28px">View Services</a>
 </div>
-<aside aria-label="Centripetal point of view" class="copilot-note">
-<strong>Finance should reduce founder stress—not add another layer of it.</strong>
-<span>Centripetal Advisors · founded 2018</span>
-</aside>
-</div>
-</section>
-<!-- Services -->
-<section class="services">
-<div class="container">
-<span class="section-label">What We Do</span>
-<h2 class="section-heading">Our Services</h2>
-<p class="section-subheading">We partner with SaaS founders and leadership teams to build the financial infrastructure that drives growth.</p>
-<div class="services-grid">
-<div class="service-card">
-<div class="service-icon">
-<svg viewbox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-</div>
-<h3>Fractional CFO</h3>
-<p>A fully embedded senior finance leader who integrates with your team, providing strategic financial guidance without the full-time overhead.</p>
-<a class="service-link" href="services.html">Learn more</a>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<svg viewbox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-</div>
-<h3>Board &amp; Investor Reporting</h3>
-<p>Institutional-grade board decks, investor updates, and financial reporting packages that build confidence and drive alignment.</p>
-<a class="service-link" href="services.html">Learn more</a>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<svg viewbox="0 0 24 24"><rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line><path d="M6 8h.01M6 12h.01M10 8h4M10 12h4"></path></svg>
-</div>
-<h3>Cash &amp; Treasury Management</h3>
-<p>Optimize cash positioning, bank relationships, and treasury operations to extend runway and maximize every dollar.</p>
-<a class="service-link" href="services.html">Learn more</a>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<svg viewbox="0 0 24 24"><line x1="12" x2="12" y1="1" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-</div>
-<h3>Fundraising &amp; Capital Strategy</h3>
-<p>End-to-end fundraising support from financial modeling and data room preparation to investor negotiations and term sheet review.</p>
-<a class="service-link" href="services.html">Learn more</a>
+<div class="copilot-visual">
+<img alt="" aria-hidden="true" src="assets/clients/copilot-graphic.png"/>
+<div class="copilot-visual-inner">
+<img alt="Centripetal Advisors" class="copilot-logo" src="assets/logo-light.png"/>
+<strong>Strategic finance for B2B SaaS founders</strong>
+<p>Founded 2018 &middot; New York</p>
 </div>
 </div>
 </div>
 </section>
-<section aria-labelledby="why-title" class="reference-panel">
-<div style="max-width:1140px;margin:0 auto 38px"><span class="reference-kicker">Why Centripetal?</span><h2 id="why-title">The senior finance perspective, without the full-time overhead.</h2></div>
-<div class="reference-grid">
-<article class="reference-card"><h3>Staff experience</h3><p>Buy-side, intermediary, and operating experience—plus an active network of capital providers who understand SaaS.</p></article>
-<article class="reference-card"><h3>Cost efficient</h3><p>Senior judgment and execution without carrying the cost of a VP Finance or CFO before the business needs one.</p></article>
-<article class="reference-card"><h3>Enduring relationships</h3><p>Average engagement is 2.5 years and rising. The goal is a long-term operating partnership, not a handoff.</p></article>
+
+<!-- Trusted By / Clients -->
+<section aria-label="Trusted by" class="trusted-by">
+<span class="trusted-by-kicker">Clients</span>
+<div class="logo-strip">
+<img alt="Client company" src="assets/clients/client-01.png"/>
+<img alt="Client company" src="assets/clients/client-02.png"/>
+<img alt="Client company" src="assets/clients/client-03.png"/>
+<img alt="Client company" src="assets/clients/client-04.png"/>
+<img alt="Client company" src="assets/clients/client-05.png"/>
+<img alt="Client company" src="assets/clients/client-06.png"/>
+<img alt="Client company" src="assets/clients/client-07.png"/>
+<img alt="Client company" src="assets/clients/client-08.png"/>
+<img alt="Client company" src="assets/clients/client-09.png"/>
+<img alt="Client company" src="assets/clients/client-10.png"/>
+<img alt="Client company" src="assets/clients/client-11.png"/>
+<img alt="Client company" src="assets/clients/client-12.png"/>
+<img alt="Client company" src="assets/clients/client-14.png"/>
 </div>
 </section>
-<section aria-label="Centripetal point of view" class="quote-band">
-<blockquote>“Without numerical fluency, in the part of life most of us inhabit, you are like a one-legged man in an ass-kicking contest.”</blockquote>
-<cite>Charlie Munger · Berkshire Hathaway</cite>
+
+<!-- About Us -->
+<section aria-labelledby="about-heading" class="about-us">
+<div class="about-grid">
+<div class="about-portrait">
+<img alt="Charles Solomon, Founder and Managing Partner of Centripetal Advisors" src="assets/reference/charles-portrait.png"/>
+</div>
+<div>
+<span class="about-kicker">About Us</span>
+<h2 id="about-heading" class="about-name">Charles Solomon</h2>
+<p><strong style="color:#243221">Founder / Managing Partner</strong></p>
+<p>Centripetal was founded in 2018 to support founders. Having met countless founders all over the world, we learned two things:</p>
+<p>1. Finance and accounting are areas that frustrate and confuse founders.</p>
+<p>2. The founder journey is not linear and often challenging and lonely.</p>
+<p>We built a firm to address these two problems by providing fractional CFO expertise. We ensure founders never lose out economically or be taken advantage of while building their business, and we aim to be a personal sounding board along the way.</p>
+<a class="service-link" href="about.html" style="display:inline-flex;margin-top:12px">Learn more about us</a>
+</div>
+</div>
 </section>
-<!-- Testimonials -->
+
+<!-- What Our Clients Are Saying -->
 <section class="testimonials">
 <div class="container">
 <span class="section-label">Client Results</span>
-<h2 class="section-heading">What Our Clients Say</h2>
+<h2 class="section-heading">What Our Clients Are Saying</h2>
 <p class="section-subheading">Founders and operators trust Centripetal to guide their most critical financial decisions.</p>
 <div class="testimonials-grid">
 <div class="testimonial-card">
-<p>"We had never dealt with institutional investors before and Centripetal really helped us take a step up to next level...Series A institutionally backed company with a board."</p>
+<p class="testimonial-text">"We had never dealt with institutional investors before and Centripetal really helped us take a step up to next level&hellip;Series A institutionally backed company with a board."</p>
 <div class="testimonial-bar"></div>
+<p class="testimonial-name">Shalom Reinman</p>
 </div>
 <div class="testimonial-card">
-<p>"We raised a $3 million convertible note...Centripetal was certainly heavily involved...lobbying for the best deal."</p>
+<p class="testimonial-text">"We raised a $3 million convertible note&hellip;Centripetal was certainly heavily involved&hellip;lobbying for the best deal."</p>
 <div class="testimonial-bar"></div>
+<p class="testimonial-name">Devo Harris</p>
 </div>
 <div class="testimonial-card">
-<p>"Centripetal invests in relationships. They go above and beyond. They care about clients and their client's performance and success."</p>
+<p class="testimonial-text">"Centripetal invests in relationships. They go above and beyond. They care about clients and their client's performance and success."</p>
 <div class="testimonial-bar"></div>
+<p class="testimonial-name">Jamie Vinick</p>
 </div>
 <div class="testimonial-card">
-<p>"Knowing that you have someone who can build you that flexible model is critical to moving fast. Companies at our stage, moving fast is one of the only things that matters."</p>
+<p class="testimonial-text">"Knowing that you have someone who can build you that flexible model is critical to moving fast. Companies at our stage, moving fast is one of the only things that matters."</p>
 <div class="testimonial-bar"></div>
+<p class="testimonial-name">Michael Rose &amp; Keith Schweitzer</p>
 </div>
 </div>
+<div style="text-align:center;margin-top:32px"><a href="testimonials.html" style="color:#4B6147;font-size:15px;font-weight:500">Read more client perspectives &rarr;</a></div>
 </div>
 </section>
-<section class="featured-insights" style="padding:64px 24px;background:#F2F2F2">
+
+<!-- Why Centripetal? -->
+<section aria-labelledby="why-title" class="reference-panel">
+<div style="max-width:1140px;margin:0 auto 38px">
+<span class="reference-kicker">Why Centripetal?</span>
+<h2 id="why-title">The senior finance perspective, without the full-time overhead.</h2>
+</div>
+<div class="reference-grid">
+<article class="reference-card">
+<h3>Staff experience</h3>
+<p>Buy-side, intermediary, and operating experience &mdash; plus active angel investors with a network of capital providers who understand SaaS.</p>
+</article>
+<article class="reference-card">
+<h3>Cost efficient</h3>
+<p>Hourly rate that is up to 60% of a full-time employee. Senior judgment and execution without carrying the cost of a VP Finance or CFO before the business needs one.</p>
+</article>
+<article class="reference-card">
+<h3>Enduring relationships</h3>
+<p>Long-term potential partnership &mdash; average engagement is 2.5 years and rising. The goal is an operating partnership, not a handoff.</p>
+</article>
+<article class="reference-card">
+<h3>Right network</h3>
+<p>60+ equity and 30+ debt lenders specialized in SaaS. Access to the capital providers who matter for your stage and vertical.</p>
+</article>
+</div>
+</section>
+
+<!-- Munger Quote -->
+<section aria-label="Centripetal point of view" class="quote-band">
+<blockquote>&ldquo;Without numerical fluency, in the part of life most of us inhabit, you are like a one-legged man in an ass-kicking contest.&rdquo;</blockquote>
+<cite>Charlie Munger &middot; Berkshire Hathaway</cite>
+</section>
+
+<!-- Featured Insights -->
+<section class="featured-insights">
 <div style="max-width:1140px;margin:0 auto">
-<span class="section-label" style="display:block;text-align:center;margin-bottom:8px">From the Field</span>
-<h2 style="font-family:'Lora',Georgia,serif;font-size:28px;font-weight:400;color:#243221;text-align:center;margin:0 0 32px">Featured Insights</h2>
-<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
-<a href="blog/when-to-hire-fractional-cfo.html" style="background:#fff;border:1px solid #c8c3b8;border-radius:8px;padding:28px 24px;text-decoration:none;color:#243221;transition:box-shadow .2s">
-<span style="font-size:12px;color:#4B6147;text-transform:uppercase;letter-spacing:1.2px;font-weight:500">Finance Leadership</span>
-<h3 style="font-family:'Lora',Georgia,serif;font-size:18px;font-weight:400;margin:8px 0 12px;line-height:1.3">When to Hire a Fractional CFO</h3>
-<p style="font-size:14px;color:#666;margin:0;line-height:1.6">The trigger is the work mix — not a revenue milestone.</p>
+<span class="section-label" style="text-align:center">From the Field</span>
+<h2 style="font:400 28px/1.2 'Lora',Georgia,serif;color:#243221;text-align:center;margin:8px 0 32px">Featured Insights</h2>
+<div class="insights-grid">
+<a href="blog/when-to-hire-fractional-cfo.html" class="insight-card">
+<span class="insight-tag">Finance Leadership</span>
+<h3>When to Hire a Fractional CFO</h3>
+<p>The trigger is the work mix &mdash; not a revenue milestone.</p>
 </a>
-<a href="blog/pre-fundraising-checklist.html" style="background:#fff;border:1px solid #c8c3b8;border-radius:8px;padding:28px 24px;text-decoration:none;color:#243221;transition:box-shadow .2s">
-<span style="font-size:12px;color:#4B6147;text-transform:uppercase;letter-spacing:1.2px;font-weight:500">Fundraising</span>
-<h3 style="font-family:'Lora',Georgia,serif;font-size:18px;font-weight:400;margin:8px 0 12px;line-height:1.3">The Pre-Fundraising Financial Checklist</h3>
-<p style="font-size:14px;color:#666;margin:0;line-height:1.6">Eight items to address before the first investor meeting.</p>
+<a href="blog/pre-fundraising-checklist.html" class="insight-card">
+<span class="insight-tag">Fundraising</span>
+<h3>The Pre-Fundraising Financial Checklist</h3>
+<p>Eight items to address before the first investor meeting.</p>
 </a>
-<a href="blog/burn-multiple-capital-efficiency.html" style="background:#fff;border:1px solid #c8c3b8;border-radius:8px;padding:28px 24px;text-decoration:none;color:#243221;transition:box-shadow .2s">
-<span style="font-size:12px;color:#4B6147;text-transform:uppercase;letter-spacing:1.2px;font-weight:500">Metrics</span>
-<h3 style="font-family:'Lora',Georgia,serif;font-size:18px;font-weight:400;margin:8px 0 12px;line-height:1.3">Burn Multiple: The Capital Efficiency Metric</h3>
-<p style="font-size:14px;color:#666;margin:0;line-height:1.6">Net burn divided by net new ARR. Track it monthly.</p>
+<a href="blog/burn-multiple-capital-efficiency.html" class="insight-card">
+<span class="insight-tag">Metrics</span>
+<h3>Burn Multiple: The Capital Efficiency Metric</h3>
+<p>Net burn divided by net new ARR. Track it monthly.</p>
 </a>
 </div>
-<div style="text-align:center;margin-top:24px"><a href="blog/index.html" style="color:#4B6147;font-size:15px;text-decoration:none;font-weight:500">View all insights →</a></div>
+<div style="text-align:center;margin-top:24px"><a href="blog/index.html" style="color:#4B6147;font-size:15px;text-decoration:none;font-weight:500">View all insights &rarr;</a></div>
 </div>
 </section>
+
+<!-- FAQ -->
 <section aria-labelledby="home-faq-title" class="home-faq">
 <div class="home-faq-inner">
 <h2 id="home-faq-title">Before You Book a Conversation</h2>
 <div class="home-faq-list">
 <details><summary>What does Centripetal Advisors help B2B SaaS founders do?</summary><p>Centripetal provides embedded strategic finance support across forecasting, board and investor reporting, treasury, fundraising, and the finance infrastructure behind growth.</p></details>
 <details><summary>When does a fractional CFO fit better than hiring a VP Finance?</summary><p>When the company needs senior financial judgment and embedded operating support, but the day-to-day finance ownership does not yet justify an in-house VP Finance.</p></details>
-<details><summary>What happens in the first conversation?</summary><p>The conversation starts with the finance question creating the most pressure—cash, capital, reporting, or finance ownership—and works toward the next useful step.</p></details>
+<details><summary>What happens in the first conversation?</summary><p>The conversation starts with the finance question creating the most pressure &mdash; cash, capital, reporting, or finance ownership &mdash; and works toward the next useful step.</p></details>
 </div>
 </div>
 </section>
+
 <!-- CTA -->
 <section class="cta">
 <div class="container">
 <h2>Ready to Transform Your Financial Strategy?</h2>
-<p>Let's talk about how Centripetal can support your next phase of growth.</p>
+<p>Let&rsquo;s talk about how Centripetal can support your next phase of growth.</p>
 <a class="btn-primary" href="https://calendly.com/charles-centripetaladvisors/30min" rel="noopener" target="_blank">Schedule a Conversation</a>
 </div>
 </section>
+
 <!-- Footer -->
 <footer class="footer">
 <div class="container">
 <div class="footer-inner">
 <div class="footer-brand">
-<img alt="Centripetal Advisors" src="assets/logo-light.png" style="height:24px;width:auto;margin-bottom:8px;"/>
+<img alt="Centripetal Advisors" src="assets/logo-light.png" style="height:24px;width:auto;margin-bottom:8px"/>
 <p>Strategic finance for B2B SaaS founders</p>
 </div>
 <div class="footer-nav">
@@ -850,16 +415,17 @@
 <div class="footer-nav">
 <h4>Resources</h4>
 <ul>
-<li><a href="resources.html">Resources</a></li>
 <li><a href="guides/index.html">Guides</a></li>
 <li><a href="blog/index.html">Blog</a></li>
+<li><a href="testimonials.html">Testimonials</a></li>
 </ul>
 </div>
 </div>
 <div class="footer-bottom">
-        © 2024 Centripetal Advisors LLC. All rights reserved.
-      </div>
+&copy; 2026 Centripetal Advisors LLC. All rights reserved. <a href="privacy-policy.html" style="color:#6B7A66;text-decoration:underline;margin-left:8px">Privacy Policy</a>
+</div>
 </div>
 </footer>
-<script src="assets/site-nav.js"></script></body>
+<script src="assets/site-nav.js"></script>
+</body>
 </html>
