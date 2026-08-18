@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
+      text { font-family: 'Inter', 'Calibri', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="#DDD8CD"/>
+
+  <!-- Logo -->
+  <image href="/Users/christianwutz/Desktop/RedySet/Clients/Centripetal Advisors/Centripetal_Pentagon/linkedin_assets/LinkedIn Assets/Centripetal_LinkedIn_Profile.png" x="30" y="310" width="60" height="60"/>
+
+  <!-- Header bar -->
+  <rect width="1080" height="280" fill="#4B6147"/>
+  <text x="540" y="80" text-anchor="middle" fill="#DDD8CD" font-size="22" font-weight="600" letter-spacing="3">THOUGHT LEADERSHIP</text>
+  <text x="540" y="145" text-anchor="middle" fill="#FFFFFF" font-size="48" font-weight="800">The Real Cost of</text>
+  <text x="540" y="205" text-anchor="middle" fill="#FFFFFF" font-size="48" font-weight="800">a Bad Cap Table</text>
+  <text x="540" y="255" text-anchor="middle" fill="#DDD8CD" font-size="20">The financial impact most founders don't see until it's too late</text>
+
+  <!-- Cost Comparison Box -->
+  <rect x="90" y="320" width="420" height="220" rx="12" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="2"/>
+  <rect x="90" y="320" width="420" height="50" rx="12" fill="#4B6147"/>
+  <rect x="90" y="358" width="420" height="12" fill="#FFFFFF"/>
+  <text x="300" y="353" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="700">FIXING IT</text>
+  <text x="300" y="420" text-anchor="middle" fill="#243221" font-size="40" font-weight="800">$5K–$15K</text>
+  <text x="300" y="460" text-anchor="middle" fill="#5A7A54" font-size="18">2-4 weeks of cleanup</text>
+  <text x="300" y="490" text-anchor="middle" fill="#5A7A54" font-size="18">Legal + advisory fees</text>
+  <text x="300" y="520" text-anchor="middle" fill="#4B6147" font-size="22" font-weight="700">✅ Predictable cost</text>
+
+  <rect x="570" y="320" width="420" height="220" rx="12" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="2"/>
+  <rect x="570" y="320" width="420" height="50" rx="12" fill="#8B4513"/>
+  <rect x="570" y="358" width="420" height="12" fill="#FFFFFF"/>
+  <text x="780" y="353" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="700">NOT FIXING IT</text>
+  <text x="780" y="420" text-anchor="middle" fill="#243221" font-size="40" font-weight="800">2–8% dilution</text>
+  <text x="780" y="460" text-anchor="middle" fill="#5A7A54" font-size="18">3-6 week fundraising delays</text>
+  <text x="780" y="490" text-anchor="middle" fill="#5A7A54" font-size="18">15-20% of cases: deal falls through</text>
+  <text x="780" y="520" text-anchor="middle" fill="#8B4513" font-size="22" font-weight="700">❌ Unpredictable loss</text>
+
+  <!-- Worst Case -->
+  <rect x="90" y="575" width="900" height="80" rx="10" fill="#4B6147"/>
+  <text x="540" y="615" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="600">Worst case documented: ~$4M in unintended dilution</text>
+  <text x="540" y="643" text-anchor="middle" fill="#DDD8CD" font-size="18">from an uncapped note with a hidden liquidation preference</text>
+
+  <!-- 4 Mistakes -->
+  <text x="540" y="710" text-anchor="middle" fill="#243221" font-size="22" font-weight="700" letter-spacing="2">THE 4 MOST COMMON MISTAKES</text>
+
+  <rect x="90" y="740" width="420" height="110" rx="10" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="120" y="775" fill="#4B6147" font-size="32" font-weight="800">01</text>
+  <text x="175" y="775" fill="#243221" font-size="20" font-weight="700">No Founder Vesting</text>
+  <text x="120" y="810" fill="#5A7A54" font-size="16">Co-founder leaves with full equity.</text>
+  <text x="120" y="832" fill="#5A7A54" font-size="16">Standard: 4yr vest, 1yr cliff.</text>
+
+  <rect x="570" y="740" width="420" height="110" rx="10" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="600" y="775" fill="#4B6147" font-size="32" font-weight="800">02</text>
+  <text x="655" y="775" fill="#243221" font-size="20" font-weight="700">Dead Equity</text>
+  <text x="600" y="810" fill="#5A7A54" font-size="16">Departed people still holding stock.</text>
+  <text x="600" y="832" fill="#5A7A54" font-size="16">Red flag above 5-8% of FD shares.</text>
+
+  <rect x="90" y="865" width="420" height="110" rx="10" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="120" y="900" fill="#4B6147" font-size="32" font-weight="800">03</text>
+  <text x="175" y="900" fill="#243221" font-size="20" font-weight="700">Unmodeled Dilution</text>
+  <text x="120" y="935" fill="#5A7A54" font-size="16">SAFEs/notes not converted at target.</text>
+  <text x="120" y="957" fill="#5A7A54" font-size="16">Median founder owns 56% post-seed.</text>
+
+  <rect x="570" y="865" width="420" height="110" rx="10" fill="#FFFFFF" stroke="#DDD8CD" stroke-width="1"/>
+  <text x="600" y="900" fill="#4B6147" font-size="32" font-weight="800">04</text>
+  <text x="655" y="900" fill="#243221" font-size="20" font-weight="700">Conflicting Terms</text>
+  <text x="600" y="935" fill="#5A7A54" font-size="16">Multiple instruments with different</text>
+  <text x="600" y="957" fill="#5A7A54" font-size="16">caps, discounts, and preferences.</text>
+
+  <!-- Ownership dilution timeline -->
+  <text x="540" y="1040" text-anchor="middle" fill="#243221" font-size="22" font-weight="700" letter-spacing="2">FOUNDER OWNERSHIP OVER TIME</text>
+
+  <rect x="140" y="1070" width="200" height="100" rx="8" fill="#4B6147"/>
+  <text x="240" y="1110" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="600">Founding</text>
+  <text x="240" y="1145" text-anchor="middle" fill="#DDD8CD" font-size="28" font-weight="800">100%</text>
+
+  <text x="370" y="1120" text-anchor="middle" fill="#5A7A54" font-size="24">→</text>
+
+  <rect x="400" y="1070" width="200" height="100" rx="8" fill="#5A7A54"/>
+  <text x="500" y="1110" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="600">Post-Seed</text>
+  <text x="500" y="1145" text-anchor="middle" fill="#DDD8CD" font-size="28" font-weight="800">56.2%</text>
+
+  <text x="630" y="1120" text-anchor="middle" fill="#5A7A54" font-size="24">→</text>
+
+  <rect x="660" y="1070" width="200" height="100" rx="8" fill="#DDD8CD"/>
+  <text x="760" y="1110" text-anchor="middle" fill="#243221" font-size="18" font-weight="600">Post-Series B</text>
+  <text x="760" y="1145" text-anchor="middle" fill="#243221" font-size="28" font-weight="800">23%</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1220" width="1080" height="130" fill="#4B6147"/>
+  <text x="540" y="1270" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">CENTRIPETAL ADVISORS</text>
+  <text x="540" y="1300" text-anchor="middle" fill="#DDD8CD" font-size="18">Free cap table review for SaaS companies $1M–$15M ARR</text>
+  <text x="540" y="1330" text-anchor="middle" fill="#DDD8CD" font-size="16">Sources: Carta, SeedBlink, Cake Equity, KESQ (2025-2026)</text>
+</svg>
