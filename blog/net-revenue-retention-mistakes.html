@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="../assets/favicon-dark.png" rel="icon" media="(prefers-color-scheme: light)">
+<link href="../assets/favicon-light.png" rel="icon" media="(prefers-color-scheme: dark)">
+<title>Net Revenue Retention: Three Mistakes That Mislead Investors | Centripetal Advisors</title>
+<meta name="description" content="Net revenue retention is the clearest signal of whether existing customers are becoming more valuable over time. Three calculation mistakes that consistently mislead.">
+<meta property="og:title" content="Net Revenue Retention: Three Mistakes That Mislead Investors | Centripetal Advisors">
+<meta property="og:description" content="Net revenue retention is the clearest signal of whether existing customers are becoming more valuable over time. Three calculation mistakes that consistently mislead.">
+<meta property="og:image" content="../assets/reference/og-mark.png">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"Article",
+  "headline":"Net Revenue Retention: Three Mistakes That Mislead Investors",
+  "description":"Net revenue retention is the clearest signal of whether existing customers are becoming more valuable over time. Three calculation mistakes that consistently mislead.",
+  "author":{"@type":"Organization","name":"Centripetal Advisors"},
+  "publisher":{"@type":"Organization","name":"Centripetal Advisors"},
+  "datePublished":"2026-08-18",
+  "keywords":"SaaS NRR net revenue retention churn expansion"
+}</script>
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"FAQPage",
+  "mainEntity":[{"@type":"Question","name":"What is net revenue retention?","acceptedAnswer":{"@type":"Answer","text":"NRR measures whether revenue from an existing customer cohort grows, stays flat, or contracts over time. The formula is (Starting ARR + Expansion - Churn - Contraction) / Starting ARR for the same set of customers."}},{"@type":"Question","name":"Why is segmented NRR more useful than blended NRR?","acceptedAnswer":{"@type":"Answer","text":"Blended NRR can mask segment-level problems. A company-wide NRR that looks healthy may hide an enterprise segment with strong expansion and an SMB segment with significant churn. The segmented view is where strategic decisions about pricing, support, and ICP targeting become visible."}},{"@type":"Question","name":"Should new customers be included in the NRR calculation?","acceptedAnswer":{"@type":"Answer","text":"No. NRR measures the behavior of an existing cohort. New logos acquired during the measurement period should not appear in the numerator. Including them inflates the metric and obscures the underlying retention and expansion dynamics."}}]
+}</script>
+<style>*,*::before,*::after{box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{margin:0;background:#DDD8CD;color:#444;font-family:'Roboto',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+a{color:#4B6147;}
+.site-nav{background:#243221;padding:18px 24px;position:relative;z-index:10;}
+.site-nav-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.site-wordmark{display:inline-flex;align-items:center;text-decoration:none;}
+.site-nav-links{display:flex;gap:28px;align-items:center;}
+.site-nav-links>a{color:#DDD8CD;text-decoration:none;font-size:15px;font-weight:400;opacity:0.9;}
+.site-nav-links>a:hover{opacity:1;}
+.nav-dropdown{position:relative;}
+.nav-dropdown>a{color:#DDD8CD;text-decoration:none;font-size:15px;font-weight:400;opacity:0.9;cursor:pointer;}
+.nav-dropdown>a:hover{opacity:1;}
+.dropdown-menu{position:absolute;top:100%;left:0;margin-top:8px;background:#F2F2F2;border-radius:6px;box-shadow:0 8px 32px rgba(36,50,33,0.18);min-width:160px;padding:8px 0;opacity:0;visibility:hidden;transform:translateY(-4px);transition:all 0.2s;z-index:20;}
+.nav-dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);}
+.dropdown-menu a{display:block;padding:10px 20px;color:#243221;text-decoration:none;font-size:14px;}
+.dropdown-menu a:hover{background:#DDD8CD;}
+.site-nav-cta{background:#DDD8CD;color:#243221;padding:10px 20px;border-radius:4px;font-weight:500;font-size:14px;text-decoration:none;}
+.site-nav-cta:hover{background:#F2F2F2;}
+.hero{background:#243221;background-image:radial-gradient(ellipse 80% 60% at 50% 40%,#4B614722,transparent);padding:80px 24px 64px;text-align:center;color:#F2F2F2;}
+.hero h1{font-family:'Lora',Georgia,serif;font-size:clamp(26px,3.5vw,40px);font-weight:400;margin:0 0 12px;line-height:1.25;max-width:760px;margin-left:auto;margin-right:auto;}
+.hero p{max-width:640px;margin:8px auto 0;font-size:16px;opacity:0.8;line-height:1.6;}
+.article{max-width:720px;margin:0 auto;padding:48px 24px 64px;}
+.article h2{font-family:'Lora',Georgia,serif;font-size:24px;font-weight:400;color:#243221;margin:40px 0 16px;line-height:1.3;}
+.article p{margin:0 0 18px;line-height:1.7;}
+.faq-section{margin-top:56px;padding-top:40px;border-top:2px solid #c8c3b8;}
+.faq-section h2{text-align:center;margin-bottom:32px;}
+details{background:#F2F2F2;border:1px solid #c8c3b8;border-radius:8px;margin-bottom:12px;overflow:hidden;transition:box-shadow 0.2s;}
+details[open]{box-shadow:0 4px 16px rgba(36,50,33,0.08);border-color:#4B6147;}
+summary{padding:18px 24px;font-weight:500;font-size:16px;cursor:pointer;color:#243221;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+summary::after{content:'+';font-size:22px;color:#4B6147;font-weight:300;transition:transform 0.2s;flex-shrink:0;}
+details[open] summary::after{content:'\2212';}
+summary::-webkit-details-marker{display:none;}
+details .faq-answer{padding:0 24px 20px;font-size:15px;line-height:1.7;color:#555;}
+.cta-block{text-align:center;margin-top:64px;padding:48px 24px;background:#F2F2F2;border-radius:12px;border:1px solid #c8c3b8;}
+.cta-block p{font-family:'Lora',Georgia,serif;font-size:18px;color:#243221;margin:0 0 24px;line-height:1.5;max-width:560px;margin-left:auto;margin-right:auto;font-style:italic;}
+.cta-btn{display:inline-block;background:#243221;color:#DDD8CD;padding:14px 32px;border-radius:6px;font-weight:500;font-size:15px;text-decoration:none;transition:background 0.15s;}
+.cta-btn:hover{background:#4B6147;}
+.related{margin-top:48px;padding:24px 0;border-top:1px solid #c8c3b8;}
+.related h3{font-family:'Lora',Georgia,serif;font-size:18px;font-weight:400;color:#243221;margin:0 0 16px;}
+.related a{display:block;color:#4B6147;text-decoration:none;font-size:15px;margin-bottom:8px;}
+.related a:hover{text-decoration:underline;}
+.footer{background:#243221;padding:48px 24px 32px;color:#DDD8CD;}
+.footer-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;}
+.footer-brand{font-family:'Lora',Georgia,serif;font-size:20px;margin-bottom:8px;}
+.footer-tagline{font-size:14px;opacity:0.7;line-height:1.5;}
+.footer-col h4{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 12px;opacity:0.6;}
+.footer-col a{display:block;color:#DDD8CD;text-decoration:none;font-size:14px;opacity:0.8;margin-bottom:8px;}
+.footer-col a:hover{opacity:1;}
+.footer-bottom{max-width:1180px;margin:24px auto 0;padding-top:16px;border-top:1px solid rgba(221,216,205,0.15);text-align:center;font-size:13px;opacity:0.5;}
+@media(max-width:768px){.site-nav-links{display:none;}.article{padding:32px 16px 48px;}.footer-inner{grid-template-columns:1fr;gap:24px;}}</style>
+<link rel="stylesheet" href="../assets/site-system.css" data-site-system>
+<link rel="canonical" href="https://credyset.github.io/centripetal-advisors-site-v2/blog/net-revenue-retention-mistakes.html"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://credyset.github.io/centripetal-advisors-site-v2/"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://credyset.github.io/centripetal-advisors-site-v2/blog/"},{"@type":"ListItem","position":3,"name":"Net Revenue Retention Mistakes","item":"https://credyset.github.io/centripetal-advisors-site-v2/blog/net-revenue-retention-mistakes.html"}]}</script></head><body>
+<nav class="site-nav" aria-label="Primary navigation"><div class="site-nav-inner">
+  <a href="../index.html" class="site-wordmark"><img src="../assets/logo-light.png" alt="Centripetal Advisors"></a>
+  <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" onclick="const n=this.nextElementSibling;n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))"><span></span><span></span><span></span></button>
+  <div class="site-nav-links">
+    <a href="../index.html">Home</a>
+    <a href="../services.html">Services</a>
+    <a href="../contact.html">Contact</a>
+    <a href="../blog/index.html">Blogs</a>
+    <a href="https://calendly.com/charles-centripetaladvisors/30min" class="site-nav-cta" target="_blank" rel="noopener">Book a Free Call</a>
+  </div>
+</div></nav>
+<section class="hero"><h1>Net Revenue Retention: Three Mistakes That Mislead Investors</h1>
+<p>Net revenue retention tells investors whether existing customers are becoming more valuable over time — without spending another dollar on acquisition. We consistently see founders calculate it incorrectly.</p></section>
+<article class="article">
+<div class="answer-box"><strong>Direct answer:</strong> NRR measures the revenue behavior of an existing customer cohort: (Starting ARR + Expansion - Churn - Contraction) / Starting ARR. The three most common errors are confusing logo retention with dollar retention, including new customers in the calculation, and reporting only a blended number instead of segmenting by customer type.</div>
+<h2>Logo retention is not dollar retention</h2>
+<p>Logo retention — the percentage of customers retained — and net dollar retention — the percentage of revenue retained and expanded — are different metrics that tell different stories.</p>
+<p>A company can have 95% logo retention and 85% NRR if the customers leaving are the largest accounts. We have seen this exact scenario mask a serious problem. The logo count looks stable while the revenue base is eroding.</p>
+<p>Report both metrics. But when an investor asks about retention, they are usually asking about dollars.</p>
+<h2>New customers do not belong in the calculation</h2>
+<p>NRR measures the behavior of an existing cohort. The formula uses a fixed set of customers: the ones who were paying at the start of the measurement period. New logos acquired during that period should not appear in the numerator.</p>
+<p>Including new customers inflates the metric. In our experience, this is the most common miscalculation, and it usually surfaces during diligence when the investor rebuilds the number from the customer-level schedule.</p>
+<h2>Blended NRR hides segment-level problems</h2>
+<p>A blended NRR that looks healthy can mask dramatically different dynamics across customer segments. As an illustrative example: an enterprise cohort at 135% NRR, a mid-market cohort at 105%, and an SMB cohort at 80% produce a blended number that looks acceptable — but the SMB segment is contracting. That is a strategic decision about where to invest, but only if the segmented data is visible.</p>
+<p>We calculate NRR monthly by segment for every client. The segmented view is where pricing, support, and ICP targeting decisions become concrete rather than directional.</p>
+<h2>What good looks like</h2>
+<p>Directional benchmarks vary by stage and segment, but as a general framework: above 100% means existing customers are growing. Above 110% is typically a positive signal at the Series A stage. Above 120% begins to indicate strong product-market fit in the existing base. These are illustrative ranges, not hard thresholds — context matters.</p>
+<p>The number alone is less useful than the trend, the segmentation, and the story behind the expansion or contraction. A founder who can explain what is driving the NRR number by segment is in a fundamentally stronger position than one who reports a blended figure.</p>
+
+<div class="faq-section">
+<h2>Frequently Asked Questions</h2>
+<details><summary>What is net revenue retention?</summary><div class="faq-answer">NRR measures whether revenue from an existing customer cohort grows, stays flat, or contracts over time. The formula is (Starting ARR + Expansion - Churn - Contraction) / Starting ARR for the same set of customers.</div></details>
+<details><summary>Why is segmented NRR more useful than blended NRR?</summary><div class="faq-answer">Blended NRR can mask segment-level problems. A company-wide NRR that looks healthy may hide an enterprise segment with strong expansion and an SMB segment with significant churn. The segmented view is where strategic decisions about pricing, support, and ICP targeting become visible.</div></details>
+<details><summary>Should new customers be included in the NRR calculation?</summary><div class="faq-answer">No. NRR measures the behavior of an existing cohort. New logos acquired during the measurement period should not appear in the numerator. Including them inflates the metric and obscures the underlying retention and expansion dynamics.</div></details>
+</div>
+
+<div class="cta-block">
+<p>Want help building your retention metrics for investor conversations?</p>
+<a href="https://calendly.com/charles-centripetaladvisors/30min" class="cta-btn">Schedule a Conversation</a>
+</div>
+<div class="related">
+<h3>Related Resources</h3>
+<a href="carr-vs-arr.html">CARR vs ARR &rarr;</a>
+<a href="customer-concentration.html">Customer Concentration &rarr;</a>
+<a href="ltv-cac-by-segment.html">LTV:CAC by Segment &rarr;</a>
+<a href="../guides/saas-finance-scorecard.html">SaaS Finance Scorecard &rarr;</a>
+</div>
+</article>
+<footer class="footer"><div class="footer-inner">
+<div><div class="footer-brand">Centripetal</div><p class="footer-tagline">Strategic finance for B2B SaaS founders</p></div>
+<div class="footer-col"><h4>Company</h4><a href="../index.html">Home</a><a href="../services.html">Services</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></div>
+<div class="footer-col"><h4>Resources</h4><a href="../guides/index.html">Guides</a><a href="index.html">Blog</a></div>
+</div><div class="footer-bottom">&copy; 2026 Centripetal Advisors. All rights reserved.</div></footer>
+<script src="../assets/site-nav.js"></script></body></html>
