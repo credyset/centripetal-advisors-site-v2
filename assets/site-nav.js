@@ -1,5 +1,9 @@
 (function () {
   function initNav() {
+    document.querySelectorAll('section.how[style*="padding:48px"]').forEach(function (answer) {
+      var hero = document.querySelector('.hero');
+      if (hero && answer !== hero) hero.after(answer);
+    });
     document.querySelectorAll('.site-nav').forEach(function (nav) {
       var toggle = nav.querySelector('.mobile-toggle, .nav-toggle');
       var links = nav.querySelector('.site-nav-links');
