@@ -18,6 +18,9 @@ h1,h2,h3,h4,h5,h6{font-family:'Lora',Georgia,serif!important;font-weight:400!imp
 .hero{background-color:var(--pine)!important;background-image:radial-gradient(ellipse 70% 80% at 50% 46%,rgba(75,97,71,.88) 0%,rgba(75,97,71,.5) 42%,rgba(36,50,33,.05) 78%),radial-gradient(circle at 8% 88%,rgba(221,216,205,.72),transparent 26%),radial-gradient(circle at 92% 48%,rgba(221,216,205,.68),transparent 22%)!important;}
 .hero h1{font-weight:400!important;}
 .hero h1,.hero p{white-space:normal!important;width:auto!important;max-width:min(760px,100%)!important;overflow:visible!important;overflow-wrap:break-word!important;}
+.related-links{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 0;padding-top:22px;border-top:1px solid rgba(75,97,71,.22)}
+.related-links a{display:inline-flex;align-items:center;padding:9px 13px;border:1px solid rgba(75,97,71,.3);border-radius:7px;color:#243221;text-decoration:none;font-size:14px;line-height:1.35;background:rgba(255,255,255,.35)}
+.related-links a:hover{border-color:#4B6147;background:#fff}
 .hero p{color:var(--stone)!important;margin-left:auto!important;margin-right:auto!important;}
 .hero-mark{display:block;width:320px!important;max-width:42vw!important;height:auto!important;margin:0 auto 28px!important;filter:brightness(0) invert(1) opacity(.78)!important;}
 .hero .hero-eyebrow{margin:0 auto 20px!important;color:var(--stone)!important;}

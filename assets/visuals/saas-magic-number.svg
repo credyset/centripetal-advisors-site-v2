@@ -47,14 +47,14 @@
 
   <!-- Excellent zone: Above 1.0 -->
   <rect x="90" y="865" width="900" height="110" rx="10" fill="#243221" opacity="0.5"/>
-  <text x="140" y="905" fill="#FFFFFF" font-size="40" font-weight="800">&gt; 1.0</text>
-  <text x="140" y="950" fill="#DDD8CD" font-size="22" font-weight="400">Excellent — every $1 in generates &gt;$1 of new ARR</text>
+  <text x="140" y="905" fill="#FFFFFF" font-size="40" font-weight="800">Directional</text>
+  <text x="140" y="950" fill="#DDD8CD" font-size="22" font-weight="400">Use the signal to investigate channel and cohort efficiency</text>
   <text x="965" y="930" fill="#8AE68A" font-size="40" font-weight="700">🚀</text>
 
   <!-- AI callout -->
   <rect x="90" y="1020" width="900" height="90" rx="10" fill="#DDD8CD" opacity="0.15"/>
-  <text x="540" y="1060" text-anchor="middle" fill="#DDD8CD" font-size="20" font-weight="600">📊 AI-native SaaS companies now report Magic Numbers above 1.0</text>
-  <text x="540" y="1090" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="400">The efficiency gap between AI-native and traditional SaaS is widening</text>
+  <text x="540" y="1060" text-anchor="middle" fill="#DDD8CD" font-size="20" font-weight="600">📊 Use the Magic Number as a directional efficiency signal</text>
+  <text x="540" y="1090" text-anchor="middle" fill="#DDD8CD" font-size="18" font-weight="400">Then inspect the channel, cohort, and cash assumptions underneath it</text>
 
   <!-- Pro tip -->
   <rect x="90" y="1140" width="900" height="80" rx="10" fill="#5A7A54"/>
