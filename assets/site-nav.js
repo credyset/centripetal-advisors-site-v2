@@ -6,6 +6,15 @@
     while (node = walker.nextNode()) {
       node.nodeValue = node.nodeValue.replace('short-term Treasury yields cleared 5% in 2024 and remain in the 3.5–3.9% range through 2026.', 'Short-term rates change; compare current yields, liquidity, and risk before moving operating cash.');
     }
+    var staticAnswer = document.querySelector('.surfaceability-answer');
+    if (staticAnswer) {
+      var staticHero = document.querySelector('.hero');
+      var staticFooter = document.querySelector('footer');
+      if (staticHero) staticHero.after(staticAnswer);
+      var staticFaq = document.querySelector('.surfaceability-faq');
+      if (staticFaq && staticFooter) staticFooter.before(staticFaq);
+      return;
+    }
     var hero = document.querySelector('.hero');
     if (!hero || document.querySelector('.surfaceability-answer')) return;
     var answer = document.createElement('section');
