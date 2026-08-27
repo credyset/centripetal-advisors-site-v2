@@ -925,9 +925,9 @@
           </div>
 
           <div class="input-card">
-            <label for="burnRate">Monthly Burn Rate</label>
+            <label for="burnRate">Monthly Operating Expenses</label>
             <div class="input-prefix">
-              <input type="number" id="burnRate" value="150000" min="0" step="5000" aria-label="Monthly burn rate in dollars">
+              <input type="number" id="burnRate" title="Total monthly operating spend before revenue, excluding the planned hires modeled below" value="150000" min="0" step="5000" aria-label="Monthly burn rate in dollars">
             </div>
           </div>
 
@@ -991,6 +991,7 @@
                 <div class="legend-item"><span class="legend-dot base"></span> Base Case</div>
                 <div class="legend-item"><span class="legend-dot delayed"></span> Delayed Collections</div>
                 <div class="legend-item"><span class="legend-dot slower"></span> Slower Growth</div>
+<p style="margin:14px 0 0;font-size:13px;line-height:1.6;color:#888">Assumptions: operating expenses are held flat except the planned hires you enter; collection delays shift when cash arrives, not how much arrives; the delayed-collections scenario adds 30 days to your current terms; the slower-growth scenario runs revenue at half your planned rate.</p>
               </div>
             </div>
             <div class="chart-container" id="chartContainer">
@@ -1162,15 +1163,12 @@
     for (let m = 1; m <= MONTHS; m++) {
       currentRev = rev * Math.pow(1 + effectiveGrowth, m);
 
-      // Collection delay: reduce effective revenue received
+      // Collection delay shifts WHEN cash arrives; it does not reduce the amount.
+      // In month m we collect billings from month (m - delayMonths); before the
+      // model starts, billings ran at the current revenue level.
       let effectiveRev = currentRev;
-      if (delayMonths > 0 && m <= Math.ceil(delayMonths)) {
-        // During the initial delay period, we receive less revenue
-        const receivedRev = rev * Math.pow(1 + effectiveGrowth, Math.max(0, m - delayMonths));
-        effectiveRev = m <= delayMonths ? rev * 0.5 : receivedRev;
-      } else if (delayMonths > 0) {
-        // After initial delay, revenue is delayed by delayMonths
-        effectiveRev = rev * Math.pow(1 + effectiveGrowth, m - delayMonths);
+      if (delayMonths > 0) {
+        effectiveRev = rev * Math.pow(1 + effectiveGrowth, Math.max(0, m - delayMonths));
       }
 
       // Hiring costs
@@ -1203,20 +1201,19 @@
       hireDelayMonths: 0
     });
 
-    // Delayed collections: collections delayed, revenue growth 50% of base
-    const delayDays = inp.collectionDelay > 0 ? inp.collectionDelay : 15;
+        // Delayed collections: same plan, but collections slip 30 days beyond current terms
     const delayed = projectScenario({
       ...inp,
-      growthMultiplier: 0.5,
+      growthMultiplier: 1,
       hireDelayMonths: 0,
-      collectionDelayOverride: delayDays
+      collectionDelayOverride: inp.collectionDelay + 30
     });
 
-    // Slower growth: revenue growth at 25% of base, all hires delayed 2 months
+        // Slower growth: revenue grows at half the planned rate; everything else as planned
     const slower = projectScenario({
       ...inp,
-      growthMultiplier: 0.25,
-      hireDelayMonths: 2
+      growthMultiplier: 0.5,
+      hireDelayMonths: 0
     });
 
     return { base, delayed, slower, burn: inp.burn };
