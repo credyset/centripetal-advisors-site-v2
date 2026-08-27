@@ -493,23 +493,7 @@ img{max-width:100%;display:block;}
           <div class="complexity-score" id="complexity-text">0 / 7 signals</div>
         </div>
 
-        <div class="cost-section">
-          <div class="cost-label">Annual Cost Comparison</div>
-          <table class="cost-table">
-            <tr id="cost-fractional">
-              <td>Fractional CFO</td>
-              <td>$95K -- $150K</td>
-            </tr>
-            <tr id="cost-vp">
-              <td>VP Finance</td>
-              <td>$220K -- $320K</td>
-            </tr>
-            <tr id="cost-controller">
-              <td>Controller</td>
-              <td>$100K -- $150K</td>
-            </tr>
-          </table>
-        </div>
+        
       </div>
     </div>
 
@@ -711,30 +695,8 @@ img{max-width:100%;display:block;}
     recTitle.textContent = recommendation.title;
     recRationale.textContent = recommendation.rationale;
 
-    // Update cost table highlighting
-    document.getElementById('cost-fractional').className = '';
-    document.getElementById('cost-vp').className = '';
-    document.getElementById('cost-controller').className = '';
+    // Cost table removed pending pricing confirmation
 
-    // Remove any existing rec tags
-    document.querySelectorAll('.rec-tag').forEach(function(t) { t.remove(); });
-
-    var recRow;
-    if (recommendation.type === 'fractional') {
-      recRow = document.getElementById('cost-fractional');
-    } else if (recommendation.type === 'vp') {
-      recRow = document.getElementById('cost-vp');
-    } else if (recommendation.type === 'controller') {
-      recRow = document.getElementById('cost-controller');
-    }
-
-    if (recRow) {
-      recRow.className = 'recommended';
-      var tag = document.createElement('span');
-      tag.className = 'rec-tag';
-      tag.textContent = 'Best Fit';
-      recRow.querySelector('td:first-child').appendChild(tag);
-    }
   }
 
   function computeRecommendation(rev, compCount, cap, pri) {
@@ -770,6 +732,22 @@ img{max-width:100%;display:block;}
       };
     }
 
+    // ── Existing VP Finance: never recommend hiring the role they already have ──
+    if (hasExistingLeadership && (isStrategicNeed || compCount >= 3)) {
+      return {
+        type: 'fractional',
+        title: 'Fractional CFO',
+        rationale: 'You already have a VP Finance owning the daily operating rhythm -- that seat is filled. The open question at your stage is strategic depth: capital decisions, board and investor work, and scenario planning that benefit from pattern recognition across many companies. A fractional CFO complements your VP Finance rather than replacing them.'
+      };
+    }
+    if (hasExistingLeadership) {
+      return {
+        type: 'none',
+        title: 'You Are Covered',
+        rationale: 'With a VP Finance in the seat and your current complexity profile, your finance leadership need is met. Revisit when a fundraise, transaction, or new structural complexity puts strategic work on the calendar beyond what one person can carry.'
+      };
+    }
+
     // ── "VP Finance" conditions ──
     if (rScore >= 3 && compCount >= 4 && !hasExistingLeadership) {
       return {
@@ -779,7 +757,7 @@ img{max-width:100%;display:block;}
       };
     }
 
-    if (rScore >= 4 && compCount >= 3) {
+    if (rScore >= 4 && compCount >= 3 && !hasExistingLeadership) {
       return {
         type: 'vp',
         title: 'VP Finance',
@@ -787,7 +765,7 @@ img{max-width:100%;display:block;}
       };
     }
 
-    if (rScore >= 3 && pri === 'all' && compCount >= 3) {
+    if (rScore >= 3 && pri === 'all' && compCount >= 3 && !hasExistingLeadership) {
       return {
         type: 'vp',
         title: 'VP Finance',
@@ -851,7 +829,7 @@ img{max-width:100%;display:block;}
       return {
         type: 'fractional',
         title: 'Fractional CFO',
-        rationale: 'Your priority need is strategic -- the kind of work that requires pattern recognition from someone who has done it across multiple companies at your stage. A fractional CFO brings that experience on a flexible engagement, typically 15-25 hours per month, and scales up during critical periods like board meetings or fundraising.'
+        rationale: 'Your priority need is strategic -- the kind of work that requires pattern recognition from someone who has done it across multiple companies at your stage. A fractional CFO brings that experience on a flexible engagement, on a part-time cadence sized to the company, scaling up during critical periods like board meetings or fundraising.'
       };
     }
 
@@ -868,7 +846,7 @@ img{max-width:100%;display:block;}
       return {
         type: 'fractional',
         title: 'Fractional CFO',
-        rationale: 'Your profile suggests you are at the stage where finance decisions benefit from experienced guidance, but the workload does not yet justify a full-time hire. A fractional CFO gives you access to senior finance leadership on a flexible basis -- typically saving 40-60% compared to a full-time VP Finance while delivering the same strategic value.'
+        rationale: 'Your profile suggests you are at the stage where finance decisions benefit from experienced guidance, but the workload does not yet justify a full-time hire. A fractional CFO gives you access to senior finance leadership on a flexible basis -- at a fraction of the cost of a full-time senior finance hire while delivering the same strategic value.'
       };
     }
 

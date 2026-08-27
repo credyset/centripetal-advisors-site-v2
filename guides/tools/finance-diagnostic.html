@@ -161,6 +161,7 @@ body {
   margin-bottom: 28px;
 }
 .tier-badge-wrap { text-align: center; }
+.tier-neutral { background: #DDD8CD; color: #4B6147; }
 .tier-red { background: #C0392B; color: #fff; }
 .tier-orange { background: #E67E22; color: #fff; }
 .tier-sage { background: #4B6147; color: #fff; }
@@ -634,7 +635,7 @@ body {
     </div>
     <p class="results-completion" id="completionText">0 of 8 categories scored</p>
     <div class="tier-badge-wrap">
-      <span class="tier-badge tier-red" id="tierBadge">Significant Gaps</span>
+      <span class="tier-badge tier-neutral" id="tierBadge">Not Yet Scored</span>
     </div>
 
     <div class="radar-section">
@@ -661,7 +662,7 @@ body {
     </div>
 
     <div class="results-cta">
-      <p id="ctaMessage">Your score suggests gaps worth reviewing.</p>
+      <p id="ctaMessage">Score the eight categories to see where you stand.</p>
       <a href="https://calendly.com/charles-centripetaladvisors/30min" class="results-cta-btn">Discuss Your Score</a>
     </div>
   </div>
@@ -881,7 +882,12 @@ body {
     // Tier badge
     var badge = document.getElementById('tierBadge');
     badge.className = 'tier-badge';
-    if (total <= 16) {
+    var ctaMsgEl = document.getElementById('ctaMessage');
+    if (scored === 0) {
+      badge.textContent = 'Not Yet Scored';
+      badge.classList.add('tier-neutral');
+      ctaMsgEl.textContent = 'Score the eight categories to see where you stand.';
+    } else if (total <= 16) {
       badge.textContent = 'Significant Gaps';
       badge.classList.add('tier-red');
     } else if (total <= 24) {
@@ -897,7 +903,9 @@ body {
 
     // CTA message
     var ctaMsg = document.getElementById('ctaMessage');
-    if (total < 25) {
+    if (scored === 0) {
+      // neutral message already set above
+    } else if (total < 25) {
       ctaMsg.textContent = 'Your score suggests gaps worth reviewing.';
     } else {
       ctaMsg.textContent = 'Your score suggests solid foundations. A diagnostic can identify the gaps that remain.';
