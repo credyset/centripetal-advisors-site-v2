@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Centripetal V2 Website — Progress Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+@page {
+  size: letter;
+  margin: 0.75in 0.85in;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Roboto', -apple-system, sans-serif;
+  font-size: 11pt;
+  line-height: 1.65;
+  color: #2D2D2D;
+  background: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Cover */
+.cover {
+  background: #243221;
+  color: #DDD8CD;
+  padding: 72px 56px 56px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  page-break-after: always;
+  position: relative;
+}
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 30% 20%, rgba(75,97,71,0.4) 0%, transparent 70%);
+}
+.cover * { position: relative; z-index: 1; }
+.cover-logo {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 14pt;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 32px;
+}
+.cover h1 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 28pt;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #F2F2F2;
+  margin-bottom: 16px;
+}
+.cover-sub {
+  font-size: 13pt;
+  opacity: 0.75;
+  margin-bottom: 48px;
+}
+.cover-meta {
+  font-size: 10pt;
+  opacity: 0.5;
+  border-top: 1px solid rgba(221,216,205,0.2);
+  padding-top: 16px;
+}
+
+/* Content */
+h2 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 16pt;
+  font-weight: 400;
+  color: #243221;
+  margin: 36px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #4B6147;
+}
+h3 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 12pt;
+  font-weight: 600;
+  color: #243221;
+  margin: 24px 0 8px;
+}
+p { margin: 0 0 10px; }
+ul, ol { padding-left: 22px; margin: 0 0 12px; }
+li { margin-bottom: 4px; }
+strong { font-weight: 500; color: #243221; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 16px;
+  font-size: 10pt;
+}
+th {
+  background: #243221;
+  color: #DDD8CD;
+  font-weight: 500;
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 9pt;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+td {
+  padding: 7px 12px;
+  border-bottom: 1px solid #e0ddd5;
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: #f7f5f0; }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 16px 0 20px;
+}
+.stat-card {
+  background: #DDD8CD;
+  border-radius: 6px;
+  padding: 16px 14px;
+  text-align: center;
+}
+.stat-value {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 22pt;
+  color: #243221;
+  display: block;
+  line-height: 1.1;
+}
+.stat-label {
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.callout {
+  background: #DDD8CD;
+  border-left: 3px solid #4B6147;
+  padding: 14px 18px;
+  margin: 14px 0 16px;
+  font-size: 10.5pt;
+  line-height: 1.6;
+}
+.callout strong { color: #243221; }
+
+.link { color: #4B6147; text-decoration: underline; }
+
+.section-break { page-break-before: always; }
+
+.footer-bar {
+  margin-top: 48px;
+  padding-top: 14px;
+  border-top: 1px solid #c8c3b8;
+  font-size: 9pt;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+}
+</style>
+</head>
+<body>
+
+<!-- Cover -->
+<div class="cover">
+  <div class="cover-logo">Centripetal Advisors</div>
+  <h1>V2 Website Progress Report</h1>
+  <p class="cover-sub">Isolated GitHub Pages build — SEO, AI surfaceability, and content exploration</p>
+  <p class="cover-meta">Prepared August 19, 2026 &nbsp;·&nbsp; For Charles Solomon &nbsp;·&nbsp; Confidential</p>
+</div>
+
+<!-- Summary -->
+<h2>Executive Summary</h2>
+
+<p>We built a separate GitHub Pages mirror of centripetaladvisors.com to test SEO, AI surfaceability, and content improvements without touching the live Framer site. The goal is to explore what a fully optimized content system looks like before committing changes to production.</p>
+
+<p><strong>Live at:</strong> <span class="link">credyset.github.io/centripetal-advisors-site-v2</span></p>
+
+<div class="stat-grid">
+  <div class="stat-card"><span class="stat-value">74</span><span class="stat-label">Total pages</span></div>
+  <div class="stat-card"><span class="stat-value">45</span><span class="stat-label">Blog articles</span></div>
+  <div class="stat-card"><span class="stat-value">14</span><span class="stat-label">Guides &amp; tools</span></div>
+  <div class="stat-card"><span class="stat-value">100%</span><span class="stat-label">SEO coverage</span></div>
+</div>
+
+<h2>What We Built and Why</h2>
+
+<h3>Content Layer</h3>
+<p>The SEO audit found that centripetaladvisors.com has strong brand and positioning but weak organic acquisition structure — no schema markup, no FAQ structure, minimal internal linking, and no blog layer. We built the content system the audit recommended:</p>
+
+<ul>
+  <li><strong>45 blog articles</strong> — built from on-disk LinkedIn post drafts, the Charles Content Library (all 16 pillars including WhatsApp material), and SEO audit recommendations</li>
+  <li><strong>14 guides and interactive tools</strong> — scorecard, diligence readiness, venture debt, treasury hygiene, CFO fit calculator, runway modeler, board deck builder</li>
+  <li><strong>6 service subpages</strong> with structured schema for search engines and AI systems</li>
+  <li><strong>Testimonials page</strong> — 14 cards from 7 sources (Appwork, Leverage VC, Exponential/MagicCare AI, HealthTech CEO, plus Reinman, Harris, Vinick, Rose/Schweitzer)</li>
+  <li><strong>Privacy policy</strong> mirrored from the live site</li>
+</ul>
+
+<h3>Blog Article Topics</h3>
+<table>
+  <tr><th>Category</th><th>Articles</th><th>Source</th></tr>
+  <tr><td>SaaS Metrics</td><td>Burn multiple, NRR, CAC payback, unit economics, magic number, LTV:CAC</td><td>LinkedIn drafts</td></tr>
+  <tr><td>Fundraising</td><td>Pre-fundraising checklist, Series A timeline, data room, revenue recognition</td><td>LinkedIn drafts</td></tr>
+  <tr><td>Capital Structure</td><td>LOC timing, covenant reality, Rule of 40, capital stack, venture debt</td><td>Content Library</td></tr>
+  <tr><td>Operating Philosophy</td><td>10-80-10 AI framework, quality over growth, stop-doing lists, board ownership</td><td>Content Library</td></tr>
+  <tr><td>Decision Frameworks</td><td>Inversion thinking, cost of complexity, net sales efficiency</td><td>Content Library</td></tr>
+  <tr><td>Finance Function</td><td>When to hire, fractional vs VP Finance, bookkeeper/controller/CFO</td><td>Existing + audit</td></tr>
+</table>
+
+<h3>SEO &amp; AI Surfaceability Layer</h3>
+<p>Every page on the site has been optimized for both traditional search and AI answer engines:</p>
+
+<table>
+  <tr><th>Metric</th><th>Coverage</th><th>Why It Matters</th></tr>
+  <tr><td>FAQPage schema</td><td>74/74</td><td>Enables FAQ rich results in Google and AI citation</td></tr>
+  <tr><td>BreadcrumbList schema</td><td>74/74</td><td>Improves site hierarchy signals for crawlers</td></tr>
+  <tr><td>OG tags</td><td>74/74</td><td>Controls how pages appear when shared on LinkedIn/social</td></tr>
+  <tr><td>Canonical URLs</td><td>74/74</td><td>Prevents duplicate content issues</td></tr>
+  <tr><td>Answer-box (direct answer)</td><td>72/74</td><td>Positions content for AI answer extraction</td></tr>
+  <tr><td>Alt text</td><td>116/116 images</td><td>Accessibility + image search visibility</td></tr>
+  <tr><td>Internal cross-links</td><td>Avg 13.6/page</td><td>Helps search engines discover and weight content</td></tr>
+  <tr><td>dateModified</td><td>45/45 articles</td><td>Freshness signal for search ranking</td></tr>
+</table>
+
+<h3 class="section-break">Homepage Rebuild</h3>
+<p>The homepage was rebuilt to mirror the primary site's section structure while keeping the SEO improvements:</p>
+
+<table>
+  <tr><th>Section</th><th>Status</th></tr>
+  <tr><td>Hero with proof stats</td><td>Matches primary site</td></tr>
+  <tr><td>Your Financial Co-Pilot (with graphic)</td><td>Added — was missing</td></tr>
+  <tr><td>Trusted By / Client logos (13 logos)</td><td>Added — was missing</td></tr>
+  <tr><td>About Us (Charles portrait + founding story)</td><td>Added — was missing</td></tr>
+  <tr><td>Testimonials with attribution</td><td>Fixed — names were missing</td></tr>
+  <tr><td>Why Centripetal (4 cards incl. capital network)</td><td>Added "Right Network" card</td></tr>
+  <tr><td>Munger quote</td><td>Preserved</td></tr>
+  <tr><td>Guides link in navigation</td><td>Added across all 74 pages</td></tr>
+</table>
+
+<h2>What's Outstanding</h2>
+
+<ol>
+  <li><strong>Homepage visual refinement</strong> — The rebuild mirrors the primary site's sections but CSS styling isn't pixel-perfect compared to Framer's rendering. We'll continue tuning.</li>
+  <li><strong>Measurement baseline</strong> — We need Search Console data, GA4 conversion paths, and AI prompt citation results to know which pages are actually performing. Without this, further content additions risk duplication.</li>
+  <li><strong>Content quality review</strong> — The newest articles use claim-safe language and first-party material, but Charles hasn't reviewed the blog copy for voice accuracy.</li>
+  <li><strong>Referral program content</strong> — Email touchpoint copy is staged but flagged for counsel/CPA review before publication.</li>
+  <li><strong>Production migration path</strong> — If the structure is approved, we need to decide how to bring the schema, FAQ markup, blog articles, and guides into the live Framer site (or whether the GitHub site becomes a parallel content hub).</li>
+</ol>
+
+<h2>What We Need From Charles</h2>
+
+<div class="callout">
+<strong>1. Voice review of the blog articles</strong><br>
+Especially the 10 articles built from WhatsApp and Fireflies content: LOC capital timing, covenant breach, Rule of 40, board meeting ownership, 10-80-10 AI, quality over growth, inversion, net sales efficiency, stop-doing lists, long engagement. These use his actual words and frameworks in editorial format. He should confirm the tone and framing feel right.<br><br>
+<em>Why:</em> These are the articles most likely to be shared on LinkedIn and most visible to prospects — getting his voice wrong would undermine credibility.
+</div>
+
+<div class="callout">
+<strong>2. Decision on production path</strong><br>
+Is the goal to migrate this content into the live Framer site, or should the GitHub Pages site become a parallel content hub?<br><br>
+<em>Why:</em> This determines whether we invest in Framer CMS integration or continue building on the static site.
+</div>
+
+<div class="callout">
+<strong>3. Testimonial approval</strong><br>
+We're using quotes from Shawn Landsberg (Appwork), David Rabinovici (Leverage VC), and the Exponential/MagicCare AI engagement on the testimonials page. Confirm these are cleared for public website use.<br><br>
+<em>Why:</em> The testimonials page is live on the GitHub site and visible to anyone with the URL.
+</div>
+
+<div class="footer-bar">
+  <span>Centripetal Advisors — V2 Website Progress Report</span>
+  <span>August 19, 2026 &nbsp;·&nbsp; Confidential</span>
+</div>
+
+</body>
+</html>
