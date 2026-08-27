@@ -234,76 +234,19 @@ a { color: #4B6147; }
 }
 
 /* ── FAQ ── */
-.faq-section {
-  margin-top: 52px;
-  border-top: 1px solid #c8c3b8;
-  padding-top: 36px;
-}
-.faq-section h2 {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 22px;
-  color: #243221;
-  margin: 0 0 20px;
-}
-.faq-item {
-  border: 1px solid #c8c3b8;
-  border-radius: 6px;
-  margin-bottom: 12px;
-  overflow: hidden;
-  background: #F2F2F2;
-  transition: box-shadow 0.2s;
-}
-.faq-item:hover {
-  box-shadow: 0 2px 8px rgba(36, 50, 33, 0.08);
-}
-.faq-item summary {
-  padding: 18px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #243221;
-  transition: background 0.15s;
-}
-.faq-item summary:hover {
-  background: rgba(75, 97, 71, 0.06);
-}
-.faq-item summary::-webkit-details-marker { display: none; }
-.faq-item summary::after {
-  content: '+';
-  font-size: 22px;
-  font-weight: 300;
-  color: #4B6147;
-  transition: transform 0.25s ease;
-  flex-shrink: 0;
-  margin-left: 16px;
-}
-.faq-item[open] summary::after {
-  content: '\2212';
-  transform: rotate(180deg);
-}
-.faq-answer-wrapper {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease;
-}
-.faq-item[open] .faq-answer-wrapper {
-  grid-template-rows: 1fr;
-}
-.faq-answer {
-  overflow: hidden;
-  padding: 0 22px;
-  font-size: 15px;
-  line-height: 1.65;
-  color: #444444;
-}
-.faq-answer p {
-  margin: 0;
-  padding-bottom: 18px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ── CTA Block ── */
 .cta-block {
@@ -492,33 +435,7 @@ a { color: #4B6147; }
 <p>Capital structure is not a one-time decision made at closing. It is an ongoing operating decision that affects the company's flexibility, risk profile, and fundability. Treat it with the same rigor as any other strategic choice.</p>
 <figure class="editorial-figure"><img alt="Capital strategy decision tree for vertical SaaS companies" src="../assets/visuals/vertical-saas-capital-decision-tree.png"/><figcaption>Capital structure should follow the operating decision the company needs to fund, not the headline dilution number.</figcaption></figure>
 <!-- FAQ -->
-<section class="faq-section" id="faq">
-<h2>Frequently Asked Questions</h2>
-<details class="faq-item">
-<summary>Should a Seed or Series A SaaS company add venture debt after raising equity?</summary>
-<div class="faq-answer-wrapper">
-<div class="faq-answer">
-<p>Only if the use of proceeds is clear, the cash-flow visibility supports covenant compliance, and the debt does not create an obligation the company cannot service in a downside case.</p>
-</div>
-</div>
-</details>
-<details class="faq-item">
-<summary>What should founders evaluate before taking venture debt?</summary>
-<div class="faq-answer-wrapper">
-<div class="faq-answer">
-<p>Cash runway with and without the debt, covenant mechanics, reporting obligations, the lender's track record with early-stage companies, and whether the capital accelerates a specific operating milestone.</p>
-</div>
-</div>
-</details>
-<details class="faq-item">
-<summary>How does capital structure affect the next fundraise?</summary>
-<div class="faq-answer-wrapper">
-<div class="faq-answer">
-<p>Existing debt, warrant coverage, and covenant obligations are part of the investor's diligence. Clean capital structure with clear use-of-proceeds history is more fundable than maximum leverage with unclear deployment.</p>
-</div>
-</div>
-</details>
-</section>
+<section class="surfaceability-faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><details><summary>Should a Seed or Series A SaaS company add venture debt after raising equity?</summary><p>Only if the use of proceeds is clear, the cash-flow visibility supports covenant compliance, and the debt does not create an obligation the company cannot service in a downside case.</p></details><details><summary>What should founders evaluate before taking venture debt?</summary><p>Cash runway with and without the debt, covenant mechanics, reporting obligations, the lender's track record with early-stage companies, and whether the capital accelerates a specific operating milestone.</p></details><details><summary>How does capital structure affect the next fundraise?</summary><p>Existing debt, warrant coverage, and covenant obligations are part of the investor's diligence. Clean capital structure with clear use-of-proceeds history is more fundable than maximum leverage with unclear deployment.</p></details></section>
 <!-- CTA -->
 <div class="cta-block">
 <p>Evaluating your capital structure?</p>
