@@ -887,17 +887,17 @@ body {
       badge.textContent = 'Not Yet Scored';
       badge.classList.add('tier-neutral');
       ctaMsgEl.textContent = 'Score the eight categories to see where you stand.';
-    } else if (total <= 16) {
-      badge.textContent = 'Significant Gaps';
+    } else if (total <= 15) {
+      badge.textContent = 'Foundation Gaps';
       badge.classList.add('tier-red');
-    } else if (total <= 24) {
-      badge.textContent = 'Foundation Building';
+    } else if (total <= 23) {
+      badge.textContent = 'Building';
       badge.classList.add('tier-orange');
-    } else if (total <= 32) {
-      badge.textContent = 'Approaching Ready';
+    } else if (total <= 31) {
+      badge.textContent = 'Solid';
       badge.classList.add('tier-sage');
     } else {
-      badge.textContent = 'Diligence Ready';
+      badge.textContent = 'Investor-Ready';
       badge.classList.add('tier-green');
     }
 
@@ -905,7 +905,7 @@ body {
     var ctaMsg = document.getElementById('ctaMessage');
     if (scored === 0) {
       // neutral message already set above
-    } else if (total < 25) {
+    } else if (total < 24) {
       ctaMsg.textContent = 'Your score suggests gaps worth reviewing.';
     } else {
       ctaMsg.textContent = 'Your score suggests solid foundations. A diagnostic can identify the gaps that remain.';
