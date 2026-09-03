@@ -81,3 +81,18 @@ h1,h2,h3,h4,h5,h6{font-family:'Lora',Georgia,serif!important;font-weight:400!imp
 .hero-guide .hero-intro{font-family:'Lora',Georgia,serif;font-size:clamp(17px,1.4vw,21px);line-height:1.6;color:#DDD8CD;margin:0;max-width:56ch;}
 
 .site-nav a{text-decoration:none!important;}
+
+
+/* Cluster divider — visible green bar */
+.cluster-divider{border:0;height:4px;background:#4B6147;margin:48px 0;max-width:100%;}
+
+/* Guide sticky sidebar */
+.guide-sidebar{position:fixed;top:50%;right:32px;transform:translateY(-50%);z-index:50;max-width:220px;}
+.sidebar-inner{background:#F2F2F2;border-radius:10px;padding:24px 20px;box-shadow:0 4px 20px rgba(36,50,33,.12);}
+.sidebar-heading{font-family:'Roboto',sans-serif;font-size:11px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#4B6147;margin:0 0 16px;}
+.sidebar-nav{display:flex;flex-direction:column;gap:0;}
+.sidebar-link{display:flex;align-items:center;gap:0;padding:10px 0 10px 16px;text-decoration:none;color:#666;font-size:13px;line-height:1.4;font-weight:400;border-left:3px solid #DDD8CD;transition:color .2s,border-color .2s,font-weight .2s;}
+.sidebar-link:hover{color:#243221;}
+.sidebar-link.active{color:#243221;font-weight:600;border-left-color:#4B6147;}
+.sidebar-indicator{display:none;}
+@media(max-width:1320px){.guide-sidebar{display:none;}}
