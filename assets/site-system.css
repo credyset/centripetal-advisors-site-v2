@@ -27,6 +27,8 @@ h1,h2,h3,h4,h5,h6{font-family:'Lora',Georgia,serif!important;font-weight:400!imp
 .hero p{color:var(--stone)!important;margin-left:auto!important;margin-right:auto!important;}
 .hero-mark{display:block;width:320px!important;max-width:42vw!important;height:auto!important;margin:0 auto 28px!important;filter:brightness(0) invert(1) opacity(.78)!important;}
 .hero .hero-eyebrow{margin:0 auto 20px!important;color:var(--stone)!important;}
+.hero .hero-inner h1,.hero .hero-inner p{margin-left:0!important;margin-right:0!important;text-align:left!important;}
+.hero .hero-inner .hero-eyebrow{margin:0 0 32px!important;}
 .btn-primary,.cta-btn,.site-nav-cta,.hero .button,.hero a[class*="btn"]{background:var(--stone)!important;color:#111!important;border:0!important;border-radius:10px!important;box-shadow:0 5px 12px rgba(0,0,0,.22)!important;font-weight:600!important;}
 .btn-primary:hover,.cta-btn:hover,.site-nav-cta:hover,.hero a[class*="btn"]:hover{background:var(--paper)!important;color:#111!important;transform:translateY(-1px)!important;}
 .services,.article,.container-section,.content-section{background-color:var(--paper);}
@@ -68,3 +70,14 @@ h1,h2,h3,h4,h5,h6{font-family:'Lora',Georgia,serif!important;font-weight:400!imp
  .nav-logo img,.site-wordmark img{width:180px!important;}
  .hero h1{font-size:32px!important;line-height:1.18!important;}
 }
+
+/* Editorial guide hero — left-aligned, mirrors live-site structure */
+.hero.hero-guide{padding:96px 24px 80px!important;text-align:left!important;}
+.hero-guide .hero-inner{position:relative;max-width:980px;margin:0 auto;}
+.hero-guide .hero-eyebrow{color:#6E8260!important;margin:0 0 32px!important;}
+.hero-guide .hero-headline{font-family:'Lora',Georgia,serif;font-size:clamp(38px,5.4vw,68px);line-height:1.18;font-weight:400;color:#DDD8CD;margin:0 0 20px;letter-spacing:.5px;max-width:22ch;}
+.hero-guide .hero-subtitle{font-family:'Lora',Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(19px,2.2vw,26px);line-height:1.45;color:#B6C6AD;margin:0 0 48px;max-width:46ch;}
+.hero-guide .hero-divider{width:110px;height:4px;background:#6E8260;border:0;margin:0 0 32px;}
+.hero-guide .hero-intro{font-family:'Lora',Georgia,serif;font-size:clamp(17px,1.4vw,21px);line-height:1.6;color:#DDD8CD;margin:0;max-width:56ch;}
+
+.site-nav a{text-decoration:none!important;}
