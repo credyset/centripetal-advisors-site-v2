@@ -69,11 +69,9 @@ body {
 /* ── HERO ── */
 .hero {
   background-color: #243221;
-  background-image: radial-gradient(ellipse 80% 60% at 50% 40%, #4B614722, transparent);
-  padding: 72px 24px 56px; text-align: center; color: #F2F2F2;
+  background-image: radial-gradient(circle at 18% 22%, rgba(221,216,205,0.30) 0%, rgba(221,216,205,0) 50%), radial-gradient(circle at 92% 78%, rgba(75,97,71,0.55) 0%, rgba(75,97,71,0) 55%);
+  padding: 72px 24px 56px; color: #F2F2F2;
 }
-.hero h1 { font-family: 'Lora', Georgia, serif; font-size: 42px; font-weight: 600; margin-bottom: 16px; line-height: 1.2; }
-.hero p { font-size: 18px; opacity: 0.8; max-width: 640px; margin: 0 auto; line-height: 1.6; }
 
 /* ── MAIN LAYOUT ── */
 .diagnostic-wrap {
@@ -283,9 +281,15 @@ body {
 
 <!-- ── HERO ── -->
 <section class="hero">
-  <h1>SaaS & AI-Native Finance Readiness Diagnostic</h1>
-  <p>Score your company across 8 critical finance dimensions. See where you stand and what to prioritize before your next raise.</p>
-</section><div style="max-width:760px;margin:14px auto 0;padding:0 24px;text-align:center"><a href="../saas-finance-scorecard.html" style="color:#4B6147;font-size:14px;font-weight:500;text-decoration:none">&larr; Companion guide: The SaaS &amp; AI-Native Finance Scorecard</a></div>
+<div class="hero-inner" style="position:relative;max-width:980px;margin:0 auto;">
+<p class="hero-eyebrow" style="font-family:'Roboto',sans-serif;font-size:13px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#6E8260;margin:0 0 32px;">INTERACTIVE TOOL · FINANCE DIAGNOSTIC</p>
+<h1 style="font-family:'Lora',Georgia,serif;font-size:clamp(44px,7.2vw,84px);line-height:1.2;font-weight:400;color:#DDD8CD;margin:0 0 20px;letter-spacing:1px;max-width:16ch;">SaaS & AI-Native Finance Readiness Diagnostic</h1>
+<p style="font-family:'Lora',Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(20px,2.4vw,28px);line-height:1.4;color:#B6C6AD;margin:0 0 56px;max-width:38ch;letter-spacing:0.5px;">Eight categories. One diagnostic view of where your finance function stands.</p>
+<hr style="width:110px;height:4px;background:#6E8260;border:0;margin:0 0 36px;"/>
+<p style="font-family:'Lora',Georgia,serif;font-size:clamp(17px,1.5vw,22px);line-height:1.55;font-weight:400;color:#DDD8CD;margin:0;max-width:56ch;">Score your company across the same eight dimensions investors and lenders evaluate. The radar chart shows your shape. The gaps show where to focus.</p>
+</div>
+</section>
+<div style="max-width:760px;margin:14px auto 0;padding:0 24px;text-align:center"><a href="../saas-finance-scorecard.html" style="color:#4B6147;font-size:14px;font-weight:500;text-decoration:none">&larr; Companion guide: The SaaS &amp; AI-Native Finance Scorecard</a></div>
 
 <div class="surfaceability-answer">The SaaS & AI-Native Finance Readiness Diagnostic is a directional self-assessment across eight finance dimensions. Use the score to see where the operating gaps are—not as a diligence verdict or financing prediction.</div>
 
@@ -664,10 +668,20 @@ body {
     <div class="results-cta">
       <p id="ctaMessage">Score the eight categories to see where you stand.</p>
       <a href="https://calendly.com/charles-centripetaladvisors/30min" class="results-cta-btn">Discuss Your Score</a>
+<button id="resetScores" style="display:block;width:100%;margin-top:12px;padding:10px;background:transparent;border:1px solid rgba(212,168,67,0.3);border-radius:6px;color:#666;font-size:13px;cursor:pointer;text-transform:uppercase;letter-spacing:1px;">Reset Scores</button>
     </div>
   </div>
 
 </div>
+
+<section style="max-width:880px;margin:0 auto;padding:72px 24px 0">
+<div style="background:#243221;border-radius:12px;padding:56px 48px;text-align:center">
+<p style="font-family:'Roboto',sans-serif;font-size:12px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#6E8260;margin:0 0 16px">DIAGNOSTIC REVIEW</p>
+<h2 style="font-family:'Lora',Georgia,serif;font-size:clamp(28px,3.5vw,38px);font-weight:400;color:#DDD8CD;margin:0 0 20px;line-height:1.25">Compare your scores to what we'd score.</h2>
+<p style="font-size:17px;line-height:1.65;color:#DDD8CD;opacity:0.85;max-width:560px;margin:0 auto 32px">We run this diagnostic in the first week of every engagement. Bring your answers and we'll walk through the gaps together.</p>
+<a href="https://calendly.com/charles-centripetaladvisors/30min" style="display:inline-block;padding:16px 32px;background:#DDD8CD;color:#243221;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;" target="_blank" rel="noopener">Schedule a Conversation</a>
+</div>
+</section>
 
 <section class="surfaceability-faq" aria-labelledby="diagnostic-faq-heading">
   <h2 id="diagnostic-faq-heading">Frequently asked questions</h2>
@@ -963,6 +977,29 @@ body {
 
     // Update state
     state.scores[category] = parseInt(radio.value, 10);
+    updateAll();
+  });
+
+  // ── RESET BUTTON ──
+  document.getElementById('resetScores').addEventListener('click', function() {
+    // Clear all scores in state
+    for (var k in state.scores) {
+      state.scores[k] = 0;
+    }
+    // Uncheck all radio buttons
+    var radios = document.querySelectorAll('.score-card input[type="radio"]');
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].checked = false;
+    }
+    // Remove selected class from all score cards
+    var cards = document.querySelectorAll('.score-card.selected');
+    for (var j = 0; j < cards.length; j++) {
+      cards[j].classList.remove('selected');
+    }
+    // Clear localStorage
+    try { localStorage.removeItem('centripetal_diagnostic'); } catch (e) {}
+    // Rebuild bars and update everything
+    buildBars();
     updateAll();
   });
 

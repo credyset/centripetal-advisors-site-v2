@@ -1105,11 +1105,13 @@
 </div></nav>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <p class="hero-eyebrow">Interactive Tool</p>
-      <h1>Board Deck Structure Builder</h1>
-      <p>Answer three questions about your company and get a recommended board deck outline, the questions your board will ask, and a readiness assessment of what you already have.</p>
+  <section class="hero" style="text-align:left;">
+    <div class="hero-inner" style="position:relative;max-width:980px;margin:0 auto;padding:0 24px;">
+<p style="font-family:'Roboto',sans-serif;font-size:13px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#6E8260;margin:0 0 32px;">INTERACTIVE TOOL &middot; BOARD DECK</p>
+<h1 style="font-family:'Lora',Georgia,serif;font-size:clamp(44px,7.2vw,84px);line-height:1.2;font-weight:400;color:#DDD8CD;margin:0 0 20px;letter-spacing:1px;max-width:16ch;">Board Deck Structure Builder</h1>
+<p style="font-family:'Lora',Georgia,serif;font-style:italic;font-weight:400;font-size:clamp(20px,2.4vw,28px);line-height:1.4;color:#B6C6AD;margin:0 0 56px;max-width:38ch;letter-spacing:0.5px;">Answer three questions. Get a stage-specific deck outline.</p>
+<hr style="width:110px;height:4px;background:#6E8260;border:0;margin:0 0 36px;"/>
+<p style="font-family:'Lora',Georgia,serif;font-size:clamp(17px,1.5vw,22px);line-height:1.55;font-weight:400;color:#DDD8CD;margin:0;max-width:56ch;">Select your stage, board composition, and which slides you already have. The builder generates a recommended deck outline with the questions your board will ask and the reconciliation points that matter.</p>
     </div>
   </section><div style="max-width:760px;margin:14px auto 0;padding:0 24px;text-align:center"><a href="../../blog/board-reporting-seed-series-a.html" style="color:#4B6147;font-size:14px;font-weight:500;text-decoration:none">&larr; Companion guide: Board Reporting from Seed to Series A</a></div>
 <div style="max-width:760px;margin:24px auto 0;padding:0 24px"><div class="answer-box" style="margin:0;padding:2px 0 2px 24px;border-left:3px solid #4B6147;background:transparent;color:#243221;font-family:'Lora',Georgia,serif;font-size:19px;line-height:1.65">The Board Deck Builder walks through the sections a seed or Series A board package typically needs and helps founders organize financial, operating, and decision content before the meeting.</div></div>
@@ -1122,15 +1124,6 @@
   <section class="editorial-figure" style="max-width:980px;margin:42px auto 0;">
     <img src="../../assets/visuals/board-deck-builder.svg" alt="Board deck framework showing the metrics, interpretation, and decisions a founder should bring to a board meeting">
     <p style="margin:14px 0 0;color:#666;font:400 11px/1.5 'Fragment Mono',monospace;letter-spacing:1px;text-transform:uppercase;">A board deck should move from evidence to interpretation to the decisions that need discussion.</p>
-  </section>
-
-  <section class="surfaceability-faq" aria-labelledby="board-faq-heading">
-    <div class="container">
-      <h2 id="board-faq-heading">Frequently asked questions</h2>
-      <details><summary>What does the Board Deck Structure Builder produce?</summary><p>It produces a starting slide outline, board-question prompts, and reconciliation points based on the inputs you provide.</p></details>
-      <details><summary>What should a board deck help the board discuss?</summary><p>A useful deck connects operating evidence to interpretation and makes the decisions, tradeoffs, and questions for the meeting explicit.</p></details>
-      <details><summary>Does the builder replace a board reporting process?</summary><p>No. It is a planning tool. The quality of the deck still depends on current definitions, reliable actuals, and a clear operating cadence.</p></details>
-    </div>
   </section>
 
   <!-- Tool -->
@@ -1324,6 +1317,11 @@
 
       </div>
 
+      <!-- Step Guidance -->
+      <div id="step-guidance" style="display:none;max-width:960px;margin:0 auto;padding:32px 0 0;text-align:center;">
+        <p style="font-size:15px;color:#777;font-style:italic;margin:0;">Select your board composition to see the recommended deck.</p>
+      </div>
+
       <!-- Output Panel -->
       <div class="output-panel" id="output-panel">
         <div class="output-divider">
@@ -1398,14 +1396,24 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section" id="cta-section">
+  <section class="surfaceability-faq" aria-labelledby="board-faq-heading">
     <div class="container">
-      <h2>Get Your Board Deck Reviewed</h2>
-      <p>We review board decks for SaaS founders every week. Bring what you have and we will tell you what to change.</p>
-      <a href="https://calendly.com/charles-centripetaladvisors/30min" class="btn-primary" target="_blank" rel="noopener">Schedule a Conversation</a>
+      <h2 id="board-faq-heading">Frequently asked questions</h2>
+      <details><summary>What does the Board Deck Structure Builder produce?</summary><p>It produces a starting slide outline, board-question prompts, and reconciliation points based on the inputs you provide.</p></details>
+      <details><summary>What should a board deck help the board discuss?</summary><p>A useful deck connects operating evidence to interpretation and makes the decisions, tradeoffs, and questions for the meeting explicit.</p></details>
+      <details><summary>Does the builder replace a board reporting process?</summary><p>No. It is a planning tool. The quality of the deck still depends on current definitions, reliable actuals, and a clear operating cadence.</p></details>
     </div>
   </section>
+
+  <!-- CTA -->
+<section style="max-width:880px;margin:0 auto;padding:72px 24px 0">
+<div style="background:#243221;border-radius:12px;padding:56px 48px;text-align:center">
+<p style="font-family:'Roboto',sans-serif;font-size:12px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#6E8260;margin:0 0 16px">BOARD DECK REVIEW</p>
+<h2 style="font-family:'Lora',Georgia,serif;font-size:clamp(28px,3.5vw,38px);font-weight:400;color:#DDD8CD;margin:0 0 20px;line-height:1.25">Get your board deck reviewed before the meeting.</h2>
+<p style="font-size:17px;line-height:1.65;color:#DDD8CD;opacity:0.85;max-width:560px;margin:0 auto 32px">We review board decks for SaaS founders every week. Bring what you have and we'll tell you what to change.</p>
+<a href="https://calendly.com/charles-centripetaladvisors/30min" style="display:inline-block;padding:16px 32px;background:#DDD8CD;color:#243221;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;" target="_blank" rel="noopener">Schedule a Conversation</a>
+</div>
+</section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -1433,7 +1441,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2024 Centripetal Advisors LLC. All rights reserved.
+        &copy; 2026 Centripetal Advisors LLC. All rights reserved.
       </div>
     </div>
   </footer>
@@ -1686,12 +1694,23 @@
     });
   });
 
+  // ===== STEP GUIDANCE =====
+  const stepGuidance = document.getElementById('step-guidance');
+
   // ===== RENDER =====
   function updateOutput() {
     if (!selectedStage || !selectedComposition) {
       outputPanel.classList.remove('visible');
+      // Show guidance when stage is selected but composition is not
+      if (selectedStage && !selectedComposition) {
+        stepGuidance.style.display = '';
+      } else {
+        stepGuidance.style.display = 'none';
+      }
+      saveState();
       return;
     }
+    stepGuidance.style.display = 'none';
 
     outputPanel.classList.add('visible');
 
@@ -1790,7 +1809,63 @@
       '</div>';
     });
     reconciliationListEl.innerHTML = rHTML;
+
+    saveState();
   }
+
+  // ===== PERSISTENCE =====
+  function saveState() {
+    var state = {};
+    var stageRadio = document.querySelector('input[name="stage"]:checked');
+    if (stageRadio) state.stage = stageRadio.value;
+    var compRadio = document.querySelector('input[name="composition"]:checked');
+    if (compRadio) state.composition = compRadio.value;
+    var slideChecks = [];
+    document.querySelectorAll('#slides-grid .checkbox-card.checked').forEach(function(card) {
+      slideChecks.push(card.dataset.slide);
+    });
+    state.slides = slideChecks;
+    try { localStorage.setItem('centripetal_board_deck', JSON.stringify(state)); } catch(e) {}
+  }
+
+  function loadState() {
+    try {
+      var data = localStorage.getItem('centripetal_board_deck');
+      if (!data) return;
+      var state = JSON.parse(data);
+      if (state.stage) {
+        var stageCard = document.querySelector('#stage-cards .radio-card[data-value="' + state.stage + '"]');
+        if (stageCard) {
+          document.querySelectorAll('#stage-cards .radio-card').forEach(function(c) { c.classList.remove('selected'); });
+          stageCard.classList.add('selected');
+          stageCard.querySelector('input').checked = true;
+          selectedStage = state.stage;
+        }
+      }
+      if (state.composition) {
+        var compCard = document.querySelector('#composition-cards .radio-card[data-value="' + state.composition + '"]');
+        if (compCard) {
+          document.querySelectorAll('#composition-cards .radio-card').forEach(function(c) { c.classList.remove('selected'); });
+          compCard.classList.add('selected');
+          compCard.querySelector('input').checked = true;
+          selectedComposition = state.composition;
+        }
+      }
+      if (state.slides && state.slides.length) {
+        state.slides.forEach(function(slideId) {
+          var card = document.querySelector('#slides-grid .checkbox-card[data-slide="' + slideId + '"]');
+          if (card) {
+            card.classList.add('checked');
+            card.querySelector('input').checked = true;
+            checkedSlides.add(slideId);
+          }
+        });
+      }
+      updateOutput();
+    } catch(e) {}
+  }
+
+  loadState();
 
 })();
 </script>
